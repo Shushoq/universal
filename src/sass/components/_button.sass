@@ -1,0 +1,24 @@
+.button
+  padding: 10px 40px 9px 20px
+  min-width: 154px
+  height: 40px
+  font-weight: 900
+  font-size: 14px
+  color: $light-color
+  background-color: $accent-color
+  border-radius: 20px
+  &__arrow
+    position: relative
+    text-align: left
+    &::after
+      content: ""
+      position: absolute
+      right: 22px
+      top: 50%
+      transform: translatey(-50%)
+      width: 15px
+      height: 7px
+      background-image: url('../img/btn-arrow.svg')
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center
