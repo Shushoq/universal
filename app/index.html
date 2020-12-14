@@ -41,7 +41,7 @@
   <div class="hero__bg"></div>
   <div class="container">
     <div class="hero__wrapper">
-      <div class="hero__content">
+      <div class="hero__content hero__content--active">
         <div class="user hero__user">
           <img class="user__img" src="img/avatar-1.png" alt="Аватар: Давид Гуров">
           <div class="user__info">
@@ -56,38 +56,113 @@
         </div>
       </div>
 
+      <div class="hero__content" id="tab_1">
+        <div class="user hero__user">
+          <img class="user__img" src="img/avatar-2.jpg" alt="Аватар: Моника Гастамбиде">
+          <div class="user__info">
+            <span class="user__name">Моника Гастамбиде</span>
+            <span class="user__job">Верстальщик</span>
+          </div>
+        </div>
+        <div class="hero__content-decr">
+          <h3 class="hero__content-subtitle">CSS</h3>
+          <h2 class="hero__content-title">Как использовать CSS float после того, как вышел Flexbox</h2>
+          <button class="button button__arrow hero__button">Читать далее</button>
+        </div>
+      </div>
+
+      <div class="hero__content" id="tab_2">
+        <div class="user hero__user">
+          <img class="user__img" src="img/avatar-3.jpg" alt="Аватар: Силене Оливейра">
+          <div class="user__info">
+            <span class="user__name">Силене Оливейра</span>
+            <span class="user__job">Разработчик</span>
+          </div>
+        </div>
+        <div class="hero__content-decr">
+          <h3 class="hero__content-subtitle">javascript</h3>
+          <h2 class="hero__content-title">На каком стандарте писать скрипты, если я фрилансер</h2>
+          <button class="button button__arrow hero__button">Читать далее</button>
+        </div>
+      </div>
+
+      <div class="hero__content" id="tab_3">
+        <div class="user hero__user">
+          <img class="user__img" src="img/avatar-4.jpg" alt="Аватар: Даниэль Рамос">
+          <div class="user__info">
+            <span class="user__name">Даниэль Рамос</span>
+            <span class="user__job">Разработчик</span>
+          </div>
+        </div>
+        <div class="hero__content-decr">
+          <h3 class="hero__content-subtitle">html</h3>
+          <h2 class="hero__content-title">Правильно вставляем картинку на сайт для Retina дисплея</h2>
+          <button class="button button__arrow hero__button">Читать далее</button>
+        </div>
+      </div>
+
+      <div class="hero__content" id="tab_4">
+        <div class="user hero__user">
+          <img class="user__img" src="img/avatar-5.jpg" alt="Аватар: Анибаль Кортес">
+          <div class="user__info">
+            <span class="user__name">Анибаль Кортес</span>
+            <span class="user__job">Web-дизайнер</span>
+          </div>
+        </div>
+        <div class="hero__content-decr">
+          <h3 class="hero__content-subtitle">Web design</h3>
+          <h2 class="hero__content-title">ТОП-10 плагинов для Figma</h2>
+          <button class="button button__arrow hero__button">Читать далее</button>
+        </div>
+      </div>
+
+      <div class="hero__content" id="tab_5">
+        <div class="user hero__user">
+          <img class="user__img" src="img/avatar-6.jpg" alt="Аватар: Агата Хименес">
+          <div class="user__info">
+            <span class="user__name">Агата Хименес</span>
+            <span class="user__job">Верстальщик</span>
+          </div>
+        </div>
+        <div class="hero__content-decr">
+          <h3 class="hero__content-subtitle">CSS</h3>
+          <h2 class="hero__content-title">Возможности CSS Grid Layout , которые уже можно применять</h2>
+          <button class="button button__arrow hero__button">Читать далее</button>
+        </div>
+      </div>
+
       <div class="hero__sidebar">
         <h2 class="hero__sidebar-title">Рекомендуем</h2>
         <ul class="hero__sidebar-list">
           <li class="hero__sidebar-item">
-            <a href="#" class="hero__sidebar-link">
+            <div class="hero__sidebar-link" data-tab="#tab_1">
               <h3 class="hero__sidebar-subtitle hero__sidebar-subtitle--1">css</h3>
               <p class="hero__sidebar-text">Как использовать CSS float после того, как вышел Flexbox</p>
-            </a>
+            </div>
           </li>
           <li class="hero__sidebar-item">
-            <a href="#" class="hero__sidebar-link">
+            <div class="hero__sidebar-link" data-tab="#tab_2">
               <h3 class="hero__sidebar-subtitle hero__sidebar-subtitle--2">javascript</h3>
               <p class="hero__sidebar-text">На каком стандарте писать скрипты, если я фрилансер</p>
-            </a>
+            </div>
           </li>
           <li class="hero__sidebar-item">
-            <a href="#" class="hero__sidebar-link">
+            <div class="hero__sidebar-link" data-tab="#tab_3">
               <h3 class="hero__sidebar-subtitle hero__sidebar-subtitle--3">html</h3>
               <p class="hero__sidebar-text">Правильно вставляем картинку на сайт для Retina дисплея</p>
-            </a>
+            </div>
           </li>
           <li class="hero__sidebar-item">
-            <a href="#" class="hero__sidebar-link">
+            <div class="hero__sidebar-link" data-tab="#tab_4">
               <h3 class="hero__sidebar-subtitle hero__sidebar-subtitle--4">web-design</h3>
               <p class="hero__sidebar-text">ТОП-10 плагинов для Figma</p>
-            </a>
+            </div>
           </li>
           <li class="hero__sidebar-item">
-            <a href="#" class="hero__sidebar-link">
+            <div class="hero__sidebar-link" data-tab="#tab_5">
               <h3 class="hero__sidebar-subtitle hero__sidebar-subtitle--5">css</h3>
               <p class="hero__sidebar-text">Возможности CSS Grid Layout , которые уже можно применять</p>
-            </a>
+            </div>
           </li>
         </ul>
       </div>
@@ -95,6 +170,139 @@
   </div>
 </section>
 
+    <section class="article">
+  <div class="container">
+    <ul class="article__list">
+      <li class="article__item">
+        <a href="#" class="article__link">
+          <h3 class="article__title">25 способов настроить&nbsp;слайдер </h3>
+          <img src="img/article-1.png" alt="Мужчина с ноутбуком" class="article__img">
+        </a>
+      </li>
+      <li class="article__item">
+        <a href="#" class="article__link">
+          <h3 class="article__title">Главные фишки фрилансера</h3>
+          <img src="img/article-2.png" alt="Мужчина и женщина смотрят на доску с документами" class="article__img">
+        </a>
+      </li>
+      <li class="article__item">
+        <a href="#" class="article__link">
+          <h3 class="article__title">Техника управлеия  временем “Помодоро”</h3>
+          <img src="img/article-3.png" alt="Телефон, клавиатура и растение" class="article__img">
+        </a>
+      </li>
+      <li class="article__item">
+        <a href="#" class="article__link">
+          <h3 class="article__title">Что нужно знать о Git и GitHub </h3>
+          <img src="img/article-4.png" alt="Таймер на 60 секунд" class="article__img">
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section class="grid">
+  <div class="container">
+    <ul class="grid__list">
+      <li class="grid__item grid__item--big">
+        <a href="#" class="grid__link grid__link--big">
+          <div class="grid__info grid__info--big">
+            <h4 class="grid__subtitle">Статьи</h4>
+            <h3 class="grid__title">Вам предложили работу мечты, но вы не можете... </h3>
+            <p class="grid__text">Как поступить, если хочется пойти на работу мечты, но она находится в другом городе. У
+              вас семья и переезжать вы не готовы... </p>
+          </div>
+          <div class="grid__user grid__user--big">
+            <img class="grid__user-img" src="img/grid-avatar.png" alt="Аватар: Инна Квашова">
+            <div class="grid__user-info">
+              <span class="grid__user-name">Инна Квашова:</span>
+              <p class="grid__user-text">Каждый разработчик мечтает переехать в...</p>
+            </div>
+            <div class="comment">
+              <svg class="comment__img">
+                <use xlink:href="img/sprite.svg#comment"></use>
+              </svg>
+              <span class="comment__counter">342</span>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="grid__item grid__item--mid"><a href="#" class="grid__link">
+
+        </a></li>
+      <li class="grid__item"><a href="#" class="grid__link">
+
+        </a></li>
+      <li class="grid__item grid__item--mid"><a href="#" class="grid__link">
+
+        </a></li>
+      <li class="grid__item grid__item--mid"><a href="#" class="grid__link">
+
+        </a></li>
+      <li class="grid__item card">
+        <a href="#" class="card__link">
+          <h3 class="card__title">Удачные референсы</h3>
+          <p class="card__text">Как выбрать подходящие исходники, если вы ищите идею для интерфейса</p>
+          <time class="card__date" datetime="2019-10-15">15 октября</time>
+        </a>
+      </li>
+
+      <li class="grid__item card">
+        <a href="#" class="card__link">
+          <h3 class="card__title">Заказчики — мудаки?</h3>
+          <p class="card__text">Как защититься от бесконечных правок на этапе сдачи проекта</p>
+          <time class="card__date" datetime="2019-10-20">20 октября</time>
+        </a>
+      </li>
+
+      <li class="grid__item card">
+        <a href="#" class="card__link">
+          <h3 class="card__title">Работа без стресса — это...</h3>
+          <p class="card__text">Обустройте свое рабочее место так, чтобы не испытывать раздражение от скрипучего... </p>
+          <time class="card__date" datetime="2019-10-26">26 октября</time>
+        </a>
+      </li>
+
+      <li class="grid__item card">
+        <a href="#" class="card__link">
+          <h3 class="card__title">Бесплатные методы...</h3>
+          <p class="card__text">Как не платить за софт, если у вас есть студенческий билет высшего учебного заведения
+          </p>
+          <time class="card__date" datetime="2019-10-13">13 октября</time>
+        </a>
+      </li>
+      <li class="grid__item grid__item--social">
+        <h3 class="grid__title grid__title--small">Наши соцсети</h3>
+        <div class="social grid__social">
+          <a href="https://www.facebook.com/" class="social__link social__link--facebook" target="_blank">
+            <svg class="social__img">
+              <use xlink:href="img/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+          <a href="https://twitter.com/" class="social__link social__link--twitter" target="_blank">
+            <svg class="social__img">
+              <use xlink:href="img/sprite.svg#twitter"></use>
+            </svg>
+          </a>
+          <a href="https://www.youtube.com/" class="social__link social__link--youtube" target="_blank">
+            <svg class="social__img">
+              <use xlink:href="img/sprite.svg#youtube"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section class="banner">
+  <div class="container banner__container">
+    <h3 class="banner__title">Расследование недели: сколько зарабатывает веб разработчик в Москве</h3>
+    <button class="button button__arrow banner__button">Читать статью</button>
+  </div>
+</section>
+
+    
   </main>
   <footer class="footer">
   <div class="container">

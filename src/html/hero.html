@@ -2,7 +2,7 @@
   <div class="hero__bg"></div>
   <div class="container">
     <div class="hero__wrapper">
-      <div class="hero__content">
+      <div class="hero__content hero__content--active">
         <div class="user hero__user">
           <img class="user__img" src="img/avatar-1.png" alt="Аватар: Давид Гуров">
           <div class="user__info">
@@ -17,38 +17,113 @@
         </div>
       </div>
 
+      <div class="hero__content" id="tab_1">
+        <div class="user hero__user">
+          <img class="user__img" src="img/avatar-2.jpg" alt="Аватар: Моника Гастамбиде">
+          <div class="user__info">
+            <span class="user__name">Моника Гастамбиде</span>
+            <span class="user__job">Верстальщик</span>
+          </div>
+        </div>
+        <div class="hero__content-decr">
+          <h3 class="hero__content-subtitle">CSS</h3>
+          <h2 class="hero__content-title">Как использовать CSS float после того, как вышел Flexbox</h2>
+          <button class="button button__arrow hero__button">Читать далее</button>
+        </div>
+      </div>
+
+      <div class="hero__content" id="tab_2">
+        <div class="user hero__user">
+          <img class="user__img" src="img/avatar-3.jpg" alt="Аватар: Силене Оливейра">
+          <div class="user__info">
+            <span class="user__name">Силене Оливейра</span>
+            <span class="user__job">Разработчик</span>
+          </div>
+        </div>
+        <div class="hero__content-decr">
+          <h3 class="hero__content-subtitle">javascript</h3>
+          <h2 class="hero__content-title">На каком стандарте писать скрипты, если я фрилансер</h2>
+          <button class="button button__arrow hero__button">Читать далее</button>
+        </div>
+      </div>
+
+      <div class="hero__content" id="tab_3">
+        <div class="user hero__user">
+          <img class="user__img" src="img/avatar-4.jpg" alt="Аватар: Даниэль Рамос">
+          <div class="user__info">
+            <span class="user__name">Даниэль Рамос</span>
+            <span class="user__job">Разработчик</span>
+          </div>
+        </div>
+        <div class="hero__content-decr">
+          <h3 class="hero__content-subtitle">html</h3>
+          <h2 class="hero__content-title">Правильно вставляем картинку на сайт для Retina дисплея</h2>
+          <button class="button button__arrow hero__button">Читать далее</button>
+        </div>
+      </div>
+
+      <div class="hero__content" id="tab_4">
+        <div class="user hero__user">
+          <img class="user__img" src="img/avatar-5.jpg" alt="Аватар: Анибаль Кортес">
+          <div class="user__info">
+            <span class="user__name">Анибаль Кортес</span>
+            <span class="user__job">Web-дизайнер</span>
+          </div>
+        </div>
+        <div class="hero__content-decr">
+          <h3 class="hero__content-subtitle">Web design</h3>
+          <h2 class="hero__content-title">ТОП-10 плагинов для Figma</h2>
+          <button class="button button__arrow hero__button">Читать далее</button>
+        </div>
+      </div>
+
+      <div class="hero__content" id="tab_5">
+        <div class="user hero__user">
+          <img class="user__img" src="img/avatar-6.jpg" alt="Аватар: Агата Хименес">
+          <div class="user__info">
+            <span class="user__name">Агата Хименес</span>
+            <span class="user__job">Верстальщик</span>
+          </div>
+        </div>
+        <div class="hero__content-decr">
+          <h3 class="hero__content-subtitle">CSS</h3>
+          <h2 class="hero__content-title">Возможности CSS Grid Layout , которые уже можно применять</h2>
+          <button class="button button__arrow hero__button">Читать далее</button>
+        </div>
+      </div>
+
       <div class="hero__sidebar">
         <h2 class="hero__sidebar-title">Рекомендуем</h2>
         <ul class="hero__sidebar-list">
           <li class="hero__sidebar-item">
-            <a href="#" class="hero__sidebar-link">
+            <div class="hero__sidebar-link" data-tab="#tab_1">
               <h3 class="hero__sidebar-subtitle hero__sidebar-subtitle--1">css</h3>
               <p class="hero__sidebar-text">Как использовать CSS float после того, как вышел Flexbox</p>
-            </a>
+            </div>
           </li>
           <li class="hero__sidebar-item">
-            <a href="#" class="hero__sidebar-link">
+            <div class="hero__sidebar-link" data-tab="#tab_2">
               <h3 class="hero__sidebar-subtitle hero__sidebar-subtitle--2">javascript</h3>
               <p class="hero__sidebar-text">На каком стандарте писать скрипты, если я фрилансер</p>
-            </a>
+            </div>
           </li>
           <li class="hero__sidebar-item">
-            <a href="#" class="hero__sidebar-link">
+            <div class="hero__sidebar-link" data-tab="#tab_3">
               <h3 class="hero__sidebar-subtitle hero__sidebar-subtitle--3">html</h3>
               <p class="hero__sidebar-text">Правильно вставляем картинку на сайт для Retina дисплея</p>
-            </a>
+            </div>
           </li>
           <li class="hero__sidebar-item">
-            <a href="#" class="hero__sidebar-link">
+            <div class="hero__sidebar-link" data-tab="#tab_4">
               <h3 class="hero__sidebar-subtitle hero__sidebar-subtitle--4">web-design</h3>
               <p class="hero__sidebar-text">ТОП-10 плагинов для Figma</p>
-            </a>
+            </div>
           </li>
           <li class="hero__sidebar-item">
-            <a href="#" class="hero__sidebar-link">
+            <div class="hero__sidebar-link" data-tab="#tab_5">
               <h3 class="hero__sidebar-subtitle hero__sidebar-subtitle--5">css</h3>
               <p class="hero__sidebar-text">Возможности CSS Grid Layout , которые уже можно применять</p>
-            </a>
+            </div>
           </li>
         </ul>
       </div>

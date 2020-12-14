@@ -1,0 +1,40 @@
+.article
+  &__list
+    display: flex
+    justify-content: space-between
+    margin-bottom: 30px
+    background-color: #30363D
+    border-radius: 10px
+    overflow: hidden
+  &__item
+    position: relative
+    &::after
+      content: ""
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      right: 0
+      width: 1px
+      height: 80px
+      background-color: $primary-color
+    &:last-child
+      &::after
+        display: none
+  &__link
+    position: relative
+    display: flex
+    align-items: center
+    padding: 30px 25px 35px
+    &:hover
+      background-color: lighten(#30363D, 5%)
+  &__title
+    font-weight: 900
+    font-size: 14px
+    max-width: 154px
+    line-height: 20px
+    color: $light-color
+    margin-right: 15px
+  &__img
+    width: 65px
+    height: 65px
+    object-fit: cover
