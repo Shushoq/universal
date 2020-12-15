@@ -7,6 +7,7 @@
   &__item
     background-color: $light-color
     border-radius: 10px
+    overflow: hidden
     &--big
       grid-column: span 2
       grid-row: span 2
@@ -18,7 +19,13 @@
     &--social
       padding: 30px 36px 40px 37px
       text-align: center
-
+    &--small
+      position: relative
+      padding: 25px
+      background-color: #3BBDC4
+      background-image: url("../img/file.svg")
+      background-repeat: no-repeat
+      background-position: right 22px top 24px
   &__info
     max-width: 237px
   &__subtitle
@@ -27,18 +34,82 @@
     letter-spacing: 0.5px
     text-transform: uppercase
     color: #6E99AE
+    &--mid
+      font-size: 14px
+      color: $dark-color
+      margin-bottom: 0
+      border-bottom: 1px solid #D9DADB
+      padding: 23px 26px 20px
+    &--purple
+      color: #E7D9FF
   &__title
-    margin-bottom: 25px
     font-family: 'Roboto Slab', sans-serif
     font-size: 25px
     line-height: 30px
     color: $dark-color
     &--small
+      margin-bottom: 25px
       font-size: 20px
       line-height: 25px
+    &--mid
+      align-self: flex-end
+      font-size: 16px
+      line-height: 25px
+    &--big
+      margin-bottom: 25px
+    &--check
+      margin-bottom: 11px
+      font-size: 16px
+      line-height: 25px
+      color: $light-color
+    &--full
+      font-size: 16px
+      line-height: 25px
+      color: $light-color
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      margin-bottom: 27px
+  &__download
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    padding-top: 13px
+    padding-bottom: 15px
+    text-align: center
+    font-weight: 900
+    font-size: 14px
+    color: $light-color
+    border-top: 1px solid #96E2E3
+    &-img
+      width: 17px
+      height: 17px
+      margin-right: 11px
+  &__file
+    font-size: 14px
+    color: #C1F4F5
   &__text
     font-size: 14px
     line-height: 20px
+  &__tags
+    display: flex
+    flex-wrap: wrap
+    padding: 25px
+    padding-right: 20px
+  &__tag
+    margin-bottom: 13px
+    margin-right: 9px
+    &-link
+      display: inline-block
+      padding: 7px 15px
+      font-weight: 900
+      font-size: 14px
+      color: $dark-color
+      border: 1px solid #D9DADB
+      border-radius: 5px
   &__link
     position: relative
     display: block
@@ -47,6 +118,34 @@
     &--big
       padding: 35px
       padding-bottom: 90px
+    &--mid
+      display: flex
+      background-image: url("../img/grid-mid.jpg")
+      background-repeat: no-repeat
+      background-position: top 95px
+      padding: 30px 52px 30px 25px
+    &--full
+      position: relative
+      z-index: 10
+      display: flex
+      justify-content: flex-end
+      flex-direction: column
+      padding: 25px
+      background-image: url("../img/grid-full.jpg")
+      background-repeat: no-repeat
+      background-position: center
+      background-size: cover
+      &::after
+        content: ""
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        width: 100%
+        height: 100%
+        background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+        z-index: -1
   &__user
     position: absolute
     left: 0
@@ -72,7 +171,33 @@
     &-text
       font-size: 14px
 
+.tagname
+  position: absolute
+  left: 24px
+  top: 19px
+  padding: 6px 12px
+  display: inline-block
+  font-size: 12px
+  color: $light-color
+  background-color: #3DC47E
+  border-radius: 3px
+
 .comment
+  display: flex
+  align-items: center
+  &--mr
+    margin-right: 8px
+  &__img
+    width: 13.5px
+    height: 13.5px
+    margin-right: 6px
+  &__counter
+    font-size: 12px
+    color: $grey-color
+    &--light
+      color: $light-color
+
+.like
   display: flex
   align-items: center
   &__img
@@ -81,4 +206,13 @@
     margin-right: 6px
   &__counter
     font-size: 12px
-    color: $grey-color
+    color: $light-color
+
+.user
+  &__descr
+    color: $light-color
+    opacity: 0.4
+    display: flex
+  &__date
+    font-size: 12px
+    margin-right: 8px

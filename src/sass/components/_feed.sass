@@ -1,0 +1,88 @@
+.feed
+  margin-bottom: 60px
+  &__container
+    display: flex
+  &__list
+    margin-right: 29px
+    background-color: $light-color
+    border-radius: 10px
+  &__item
+    position: relative
+    display: flex
+    padding: 25px
+    &:not(:last-child)
+      &::after
+        content: ''
+        position: absolute
+        bottom: 0
+        width: calc(100% - 50px)
+        height: 1px
+        background-color: #D9DADB
+  &__img
+    margin-right: 25px
+    width: 336px
+    height: 195px
+    object-fit: cover
+  &__content
+    display: flex
+    flex-direction: column
+  &__subtitle
+    margin-top: 5px
+    margin-bottom: 15px
+    font-weight: 900
+    font-size: 12px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    &--1
+      color: #4592FF
+    &--2
+      color: #3BBDC4
+    &--3
+      color: #FF4F52
+    &--4
+      color: #3BBDC4
+    &--5
+      color: #FF4F52
+    &--6
+      color: #AC8EE3
+
+  &__title
+    margin-bottom: 11px
+    font-family: "Roboto Slab", sans-serif
+    font-size: 20px
+    line-height: 25px
+    color: $dark-color
+  &__text
+    font-size: 14px
+    line-height: 20px
+    color: $primary-color
+  &__icon
+    position: absolute
+    top: 26px
+    right: 28px
+    width: 14px
+    height: 18px
+  &__bottom
+    margin-top: auto
+    margin-bottom: 5px
+    display: flex
+  &__date
+    margin-right: 13px
+    color: $grey-color
+    font-size: 12px
+
+.comment
+  &__img
+    &--grey
+      fill: #BCBFC2
+  &__counter
+    &--grey
+      color: $grey-color
+
+.like
+  &__img
+    &--grey
+      fill: #BCBFC2
+  &__counter
+    &--grey
+      color: $grey-color
