@@ -6,13 +6,19 @@
     grid-template-columns: repeat(4, 1fr)
     grid-auto-rows: 170px
     gap: 30px
+  &__slider
+    position: relative
+    overflow: hidden
+    width: 100%
+    height: 100%
+    grid-column: span 2
+    grid-row: span 3
+    border-radius: 10px
   &__item
     border-radius: 10px
     background-color: $light-color
     &--big
       position: relative
-      grid-column: span 2
-      grid-row: span 3
       display: flex
       align-items: center
       flex-direction: column
@@ -22,7 +28,6 @@
       background-image: url("../img/news-bg.jpg")
       padding-top: 50px
       padding-bottom: 40px
-      padding: 50px 50px 40px
       z-index: 10
       &::after
         content: ""
@@ -36,8 +41,35 @@
         background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
         z-index: -1
     &--mid
+      display: flex
+      position: relative
       grid-column: span 2
       grid-row: span 2
+      background-color: #B4D1E0
+      background-image: url("../img/circle.svg")
+      background-repeat: no-repeat
+      background-position: right 30px top 65px
+      z-index: 1
+      overflow: hidden
+  &__content
+    padding-top: 35px
+    padding-right: 35px
+    padding-left: 35px
+    padding-bottom: 50px
+    display: flex
+    flex-direction: column
+    align-items: start
+  &__img
+    &--mid
+      width: 270px
+      height: 370px
+  &__subtitle
+    font-weight: 900
+    font-size: 12px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    color: #6E99AE
+    margin-bottom: 23px
   &__title
     margin-bottom: 43px
     font-family: "Roboto Slab", sans-serif
@@ -45,6 +77,12 @@
     line-height: 50px
     text-align: center
     color: $light-color
+    &--mid
+      font-size: 25px
+      line-height: 30px
+      color: $dark-color
+      text-align: left
+      margin-bottom: 15px
   &__user
     align-items: normal
     flex-direction: column
@@ -53,10 +91,39 @@
   &__tagname
     left: 19px
     top: 19px
+  &__text
+    font-size: 14px
+    line-height: 20px
+    font-size: $primary-color
+  &__btn
+    margin-top: auto
   &__button
+    display: flex
+    align-items: center
+    justify-content: center
     min-width: 194px
     padding: 10px 20px
-
+    box-sizing: border-box
+    &-img
+      width: 19px
+      height: 15px
+      margin-right: 6px
+    span
+      opacity: 0.4
+      margin-left: 10px
+  &__pagination
+    margin-bottom: 30px
+  &__bullet
+    display: inline-block
+    width: 8px
+    height: 8px
+    margin: 0 8px
+    border-radius: 50%
+    background-color: $light-color
+    opacity: 0.4
+    cursor: pointer
+    &--active
+      opacity: 1
 .user
   &__img
     &--news
