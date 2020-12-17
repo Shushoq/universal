@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="page">
   <header class="header">
   <div class="container header__container">
     <a class="header__logo" href="index.html" aria-label="Логотип: Universal">
@@ -33,6 +33,11 @@
         </svg>
       </button>
     </form>
+    <div class="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
 </header>
 
@@ -187,7 +192,7 @@
       </li>
       <li class="article__item">
         <a href="#" class="article__link">
-          <h3 class="article__title">Техника управлеия  временем “Помодоро”</h3>
+          <h3 class="article__title">Техника управления  временем “Помодоро”</h3>
           <img src="img/article-3.png" alt="Телефон, клавиатура и растение" class="article__img">
         </a>
       </li>
@@ -218,7 +223,7 @@
               <span class="grid__user-name">Инна Квашова:</span>
               <p class="grid__user-text">Каждый разработчик мечтает переехать в...</p>
             </div>
-            <div class="comment">
+            <div class="comment grid__comment">
               <svg class="comment__img">
                 <use xlink:href="img/sprite.svg#comment"></use>
               </svg>
@@ -285,7 +290,7 @@
         </ul>
       </li>
 
-      <li class="grid__item grid__item--mid">
+      <li class="grid__item grid__item--mid grid__item--shadow">
         <a href="#" class="grid__link grid__link--mid">
           <h3 class="grid__title grid__title--mid">20+ инструментов для js-разработчика</h3>
         </a>

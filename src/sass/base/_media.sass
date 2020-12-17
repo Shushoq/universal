@@ -1,7 +1,367 @@
-// @media (max-width: 1200px)
+@media (max-width: 1200px)
+  .container
+    max-width: 990px
+  .search
+    width: 250px
+  .header
+    &__logo
+      width: 140px
+  .nav
+    &__link
+      padding: 25px 10px
+  .article
+    &__title
+      font-size: 12px
+    &__link
+      padding: 30px 15px 35px
+  .grid
+    &__list
+      grid-auto-rows: 190px
+      gap: 20px
+    &__title
+      &--mid
+        font-size: 15px
+        line-height: 22px
+    &__item
+      &--big
+        background-position: right -75px top 20px
+      &--social
+        padding-left: 20px
+        padding-right: 20px
+    &__user
+      padding: 12px 25px 13px
+      &-text
+        max-width: 200px
+    &__tags
+      padding: 25px 15px 25px 15px
+  .user
+    &__info
+    &__descr
+      flex-wrap: wrap
+    &__date
+      width: 100%
+      margin-bottom: 5px
+  .banner
+    &__title
+      max-width: 90%
+  .sidebar
+    min-width: 225px
+  .footer
+    &__inner
+      flex-basis: calc(100% / 6)
+      &:last-child
+        flex-basis: calc(100% / 6)
+  .news
+    &__items
+      gap: 20px
+@media (max-width: 992px)
+  .feed
+    &__list
+      margin-right: 0
+  .sidebar
+    display: none
+  .article
+    &__list
+      flex-wrap: wrap
+      padding: 15px
+    &__item
+      flex-basis: 50%
+      &:nth-child(2)
+        &::after
+          display: none
+      &:nth-child(-n + 2)
+        &::before
+          content: ""
+          position: absolute
+          left: 15px
+          bottom: 0
+          width: calc(100% - 30px)
+          height: 1px
+          background-color: $primary-color
+    &__link
+      justify-content: space-between
+      padding: 15px
+    &__title
+      max-width: none
+      font-size: 14px
+  .grid
+    &__list
+      grid-template-columns: repeat(2, 1fr)
+      grid-auto-rows: 170px
+    &__link
+      background-size: cover
+    &__title
+      &--mid
+        align-self: flex-start
+        font-size: 20px
+        color: $light-color
+        z-index: 10
+    &__user
+      &-info
+        display: block
+    &__item
+      &--big
+        grid-column: span 1
+        background-image: none
+      &--small
+        order: 1
+      &--social
+        order: 2
+      &--shadow
+        position: relative
+        &::after
+          content: ""
+          position: absolute
+          left: 0
+          right: 0
+          top: 0
+          bottom: 0
+          width: 100%
+          height: 100%
+          background-color: $dark-color
+          opacity: 40%
+          z-index: 1
+  .hero
+    &__wrapper
+      height: 470px
+    &__sidebar
+      &-item
+        height: calc((470px - 59px) / 5)
+      &-link
+        padding: 10px
+        padding-left: 20px
+        padding-right: 20px
+    &__content
+      &-title
+        font-size: 30px
+        line-height: 38px
+        max-width: none
+  .social
+    justify-content: space-evenly
+  .banner
+    &__title
+      font-size: 35px
+      line-height: 44px
+      max-width: none
+  .news
+    &__items
+      grid-template-columns: repeat(2,1fr)
+  .footer
+    &__menu
+      flex-wrap: wrap
+      padding-bottom: 40px
+    &__inner
+      flex-basis: calc(100% / 3)
+      margin-bottom: 33px
+      &:last-child
+        flex-basis: calc(100% / 3)
+  .hero
+    &__bg
+      height: 375px
+  .header
+    z-index: 300
+    width: 100%
+  .nav
+    position: fixed
+    height: 100%
+    width: 100%
+    top: 70px
+    right: -200%
+    background-color: $dark-color
+    transition: right 0.5s ease
+    z-index: 200
+    overflow-y: scroll
+    &--active
+      right: 0
+      transition: right 0.5s ease
+    &__list
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+    &__link
+      display: block
+      font-size: 24px
+      padding-left: 50px
+      padding-right: 50px
+  .burger
+    display: flex
+  .footer
+    &__social
+      &-menu
+        flex-wrap: wrap
+      &-item
+        flex-basis: 30%
+        &:nth-child(-n + 2)
+          margin-bottom: 5px
+    &__copy
+      align-items: center
+      flex-wrap: wrap
+      padding: 30px 0
+      &-descr
+        width: 100%
+        margin-bottom: 15px
 
-// @media (max-width: 992px)
+@media (max-width: 768px)
+  .hero
+    &__content
+      padding: 25px 25px 100px
+      &-title
+        font-size: 26px
+        line-height: 35px
+  .grid
+    &__link
+      &--big
+        padding: 20px 20px 20px
+      &--mid
+        padding: 20px
+    &__title
+      font-size: 20px
+      &--check
+        font-size: 16px
+      &--mid
+        font-size: 22px
+        line-height: 1.3
+    &__user
+      &-text
+        max-width: 125px
+  .banner
+    &__title
+      font-size: 26px
+      line-height: 36px
+  .feed
+    &__img
+      width: 40%
+  .footer
+    &__social
+      flex-wrap: wrap
+      &-menu
+        order: -1
+        flex-wrap: nowrap
+        justify-content: space-between
+        width: 100%
+        margin-bottom: 15px
+      &-item
+        &:not(:last-child)
+          margin-right: 0
 
-// @media (max-width: 768px)
+@media (max-width: 576px)
+  .container
+    max-width: 87%
+    padding: 0
+  .header
+    &__container
+      flex-wrap: wrap
+    &__search
+      order: 1
+      width: 100%
+      margin-top: 15px
+  .hero
+    &__content
+      display: none
+    &__sidebar
+      max-width: 100%
+  .article
+    &__list
+    &__item
+      flex-basis: 100%
+      &::after
+        display: none
+      &:not(:last-child)
+        &::before
+          content: ""
+          position: absolute
+          left: 15px
+          bottom: 0
+          width: calc(100% - 30px)
+          height: 1px
+          background-color: $primary-color
+  .grid
+    &__list
+      grid-template-columns: 1fr
+      grid-auto-rows: 160px
+    &__user
+      &-text
+        max-width: 80%
+  .banner
+    margin: 40px 0
+    padding: 40px 0
+  .feed
+    margin-bottom: 40px
+    &__item
+      flex-wrap: wrap
+    &__img
+      width: 100%
+      margin-right: 0
+      margin-bottom: 5px
+    &__icon
+      top: 230px
+    &__text
+      margin-bottom: 10px
+    &__bottom
+      margin: 0
+  .news
+    padding: 40px 0
+    &__items
+      grid-template-columns: 1fr
+      overflow: hidden
+    &__item
+      &--mid
+        grid-column: span 1
+    &__slider
+      grid-column: span 1
+  .subscribe
+    padding: 40px 0
+    &__title
+      font-size: 24px
+      text-align: left
+      margin-bottom: 15px
+  .form
+    &__content
+      width: 100%
+      flex-wrap: wrap
+    &__input
+      width: 100%
+      margin-bottom: 15px
+  .footer
+    &__menu
+      padding-bottom: 20px
+    &__inner
+      flex-basis: calc(100% / 2)
+      &:last-child
+        flex-basis: calc(100% / 2)
+    &__social
+      &-menu
+        flex-wrap: wrap
+      &-item
+        flex-basis: 50%
+        &:nth-child(-n+2)
+          margin-bottom: 10px
 
-// @media (max-width: 576px)
+@media (max-width: 576px)
+  .grid
+    &__title
+      font-size: 17px
+      line-height: 25px
+      &--mid
+        font-size: 24px
+        line-height: 34px
+    &__user
+      &-text
+        max-width: 125px
+    &__subtitle
+      padding: 15px
+    &__tags
+      padding: 15px
+  .banner
+    &__title
+      font-size: 20px
+      line-height: 30px
+  .news
+    &__title
+      font-size: 24px
+      line-height: 34px
+  .social
+    &__link
+      &--footer
+        &:not(:last-child)
+          margin-right: 10px

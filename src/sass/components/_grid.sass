@@ -26,6 +26,8 @@
       background-image: url("../img/file.svg")
       background-repeat: no-repeat
       background-position: right 22px top 24px
+  &__comment
+    margin-left: auto
   &__info
     max-width: 237px
   &__subtitle
@@ -157,7 +159,6 @@
     border-top: 1px solid #D9DADB
     &-info
       display: flex
-      margin-right: 16px
     &-img
       width: 30px
       height: 30px
@@ -170,6 +171,7 @@
       color: $dark-color
     &-text
       font-size: 14px
+      @include transfer1
 
 .tagname
   position: absolute
