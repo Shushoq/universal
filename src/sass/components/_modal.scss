@@ -1,0 +1,148 @@
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity $transition, visibility $transition;
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 12px;
+
+    &-btn {
+      width: 16px;
+      height: 16px;
+      fill: #000;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $dark-color;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 15px;
+
+    &-group {
+      position: relative;
+      width: 100%;
+      margin-top: 25px;
+    }
+  }
+
+  &__textarea {
+    width: 100%;
+    min-height: 100px;
+    resize: none;
+    margin-top: 25px;
+    padding: 15px;
+  }
+
+  &__form {
+    &-bottom {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 15px;
+      padding-bottom: 18px;
+      align-items: center;
+    }
+
+    &-text {
+      font-weight: 500;
+      color: $dark-color;
+    }
+  }
+}
+
+.modal::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.modal__container {
+  position: relative;
+  width: 450px;
+  margin: 50px auto;
+  display: none;
+  vertical-align: middle;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: default;
+}
+
+@media (max-width: 1024px) {
+  .modal__container {
+    width: 90%;
+  }
+}
+
+.modal.is-open {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity $transition, visibility $transition;
+}
+
+.modal__container.modal-open {
+  display: inline-block;
+}
+
+.fade {
+  opacity: 0;
+  transition: opacity $transition
+}
+
+.fade.animate-open {
+  opacity: 1;
+  transition: opacity $transition
+}
+
+.fadeInUp {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: opacity $transition, transform $transition
+}
+
+.fadeInUp.animate-open {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity $transition, transform $transition
+}
+
+.content {
+  min-height: 200vh;
+}
+
+.disable-scroll {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}

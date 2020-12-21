@@ -22,3 +22,10 @@
     font-size: 12px
     color: $grey-color
     margin-top: auto
+
+@media(hover: hover) and (pointer: fine)
+  .card
+    transition: box-shadow 0.3s ease
+    &:hover
+      transition: box-shadow 0.3s ease
+      box-shadow: inset 0 3px 6px rgba(0,0,0, 0.5)

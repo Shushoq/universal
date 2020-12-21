@@ -218,3 +218,25 @@
   &__date
     font-size: 12px
     margin-right: 8px
+
+@media(hover: hover) and (pointer: fine)
+  .grid
+    &__tag
+      &-link
+        transition: background-color 0.3s ease, color 0.3s ease
+        &:hover
+          background-color: lighten(#30363D, 30%)
+          transition: background-color 0.3s ease, color 0.3s ease
+          color: $light-color
+    &__download
+      transition: background-color 0.3s ease
+      &:hover
+        background-color: darken(#96E2E3, 35%)
+        transition: background-color 0.3s ease
+
+    &__item
+      &--big,&--mid
+        transition: box-shadow 0.3s ease
+        &:hover
+          transition: box-shadow 0.3s ease
+          box-shadow: 0 3px 6px rgba(0,0,0, 0.5)

@@ -18,10 +18,14 @@
         width: calc(100% - 50px)
         height: 1px
         background-color: #D9DADB
-  &__img
+  &__link
     margin-right: 25px
-    width: 336px
+    max-width: 336px
+    min-width: 336px
     height: 195px
+  &__img
+    width: 100%
+    height: 100%
     object-fit: cover
   &__content
     display: flex
@@ -59,11 +63,8 @@
     color: $primary-color
     @include transfer3
   &__icon
-    position: absolute
     top: 26px
     right: 28px
-    width: 14px
-    height: 18px
   &__bottom
     margin-top: auto
     margin-bottom: 5px
@@ -88,3 +89,16 @@
   &__counter
     &--grey
       color: $grey-color
+
+.icon
+  position: absolute
+  width: 14px
+  height: 18px
+  cursor: pointer
+  fill: #BCBFC2
+  transition: fill 0.3s ease
+  &:hover
+    fill: #FF4F52
+    transition: fill 0.3s ease
+  &--active
+    fill: #FF4F52

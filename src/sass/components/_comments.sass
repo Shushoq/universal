@@ -1,0 +1,185 @@
+.comments
+  padding: 93px 0 30px
+  background-color: #fff
+  &__top
+    display: flex
+    align-items: center
+    max-width: 750px
+  &__title
+    margin-right: 10px
+    font-family: "Roboto Slab", sans-serif
+    font-size: 40px
+    color: $dark-color
+  &__counter
+    font-size: 40px
+    color: $grey-color
+  &__add
+    display: flex
+    align-items: center
+    padding: 10px 20px
+    margin-left: auto
+    color: $dark-color
+    font-weight: 900
+    font-size: 14px
+    border: 1px solid #D9DADB
+    border-radius: 20px
+  &__img
+    width: 18px
+    height: 18px
+    margin-right: 11px
+  &__wrapper
+    max-width: 750px
+    margin-top: 30px
+  &__item
+    display: flex
+    padding: 20px 0 28px
+    border-top: 1px solid #D9DADB
+    &-reply
+      padding-left: 90px
+    &--hidden
+      display: none
+  &__avatar
+    width: 75px
+    height: 75px
+    margin-right: 15px
+    border-radius: 50%
+  &__info
+    display: flex
+    flex-direction: column
+  &__author
+    padding-top: 5px
+    margin-bottom: 15px
+    display: flex
+    align-items: center
+  &__name
+    margin-right: 9px
+    font-family: "Roboto Slab", sans-serif
+    font-size: 16px
+    color: $dark-color
+  &__date
+    color: $grey-color
+    font-size: 12px
+  &__text
+    max-width: 570px
+    margin-bottom: 14px
+    font-size: 18px
+    line-height: 30px
+    color: $primary-color
+    &--mb
+      margin-bottom: 45px
+  &__bottom
+    display: flex
+    align-items: center
+    &-text
+      margin-right: 17px
+      font-size: 12px
+      color: $dark-color
+    &-counter
+      margin: 0 10px
+      font-weight: 900
+      font-size: 12px
+  &__comment
+    margin-right: 5px
+    width: 13.5px
+    height: 13.5px
+  &__thumb
+    width: 14px
+    height: 13px
+    fill: #BCBFC2
+  &__load
+    margin-bottom: 60px
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    margin-top: 2px
+    padding: 16px 15px
+    color: $dark-color
+    font-weight: 900
+    font-size: 14px
+    border: 1px solid #D9DADB
+    border-radius: 25px
+    &-img
+      margin-top: 2px
+      margin-left: 27px
+      margin-right: 9px
+      width: 13.5px
+      height: 13.5px
+  &__new
+    padding: 30px 40px 35px 30px
+    background-color: #F5F5F5
+    border-radius: 10px
+    &-img
+      margin-right: 20px
+      width: 75px
+      height: 75px
+      border-radius: 50%
+    &-title
+      margin-left: 95px
+      margin-bottom: 15px
+      font-family: "Roboto Slab",sans-serif
+      font-size: 20px
+      color: $dark-color
+    &-wrapper
+      display: flex
+    &-inner
+      position: relative
+    &-form
+      position: relative
+      display: flex
+      flex-wrap: wrap
+      align-items: start
+      flex-basis: 100%
+      &::after
+        position: absolute
+        content: ''
+        left: -9px
+        top: 29px
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 9px 10px 9px 0
+        border-color: transparent #ffffff transparent transparent
+        z-index: 10
+      &::before
+        position: absolute
+        content: ''
+        left: -11px
+        top: 28px
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 10px 12px 10px 0
+        border-color: transparent #D9DADB transparent transparent
+        z-index: 3
+    &-inner
+      flex-basis: 100%
+      .js-validate-error-label
+        bottom: 0
+    &-text
+      width: 100%
+      margin-bottom: 13px
+      padding: 15px
+      color: $dark-color
+      font-size: 14px
+      resize: none
+      border: 1px solid #D9DADB
+      min-height: 130px
+      border-radius: 5px
+      outline: none
+    &-button
+      min-width: 137px
+      margin-left: 3px
+
+@media(hover: hover) and (pointer: fine)
+  .comments
+    &__add
+      transition: background-color 0.3s ease
+      &:hover
+        background-color: #d9dadb
+        transition: background-color 0.3s ease
+    &__load
+      transition: background-color 0.3s ease
+      &:hover
+        background-color: #d9dadb
+        transition: background-color 0.3s ease

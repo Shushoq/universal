@@ -1,0 +1,118 @@
+.heading
+  position: relative
+  padding-top: 63px
+  padding-bottom: 72px
+  background-image: url('../img/heading-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  z-index: 10
+  &::after
+    content: ""
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(0deg, rgba(38, 45, 51, 0.75), rgba(38, 45, 51, 0.75))
+    z-index: -1
+  &__container-s
+    position: relative
+  &__top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 50px
+  &__tag
+    font-weight: 900
+    font-size: 12px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    color: #4592FF
+  &__title
+    max-width: 80%
+    margin-bottom: 32px
+    font-family: "Roboto Slab", sans-serif
+    font-size: 55px
+    line-height: 70px
+    color: #fff
+  &__text
+    max-width: 67%
+    font-size: 18px
+    line-height: 30px
+    color: #fff
+    mix-blend-mode: normal
+    opacity: 0.85
+  &__bottom
+    display: flex
+    align-items: center
+    margin-top: 41px
+  &__icon
+    width: 22px
+    height: 27px
+    left: -93px
+    top: 88px
+  &__like
+    margin-right: 20px
+
+.navigation
+  display: flex
+  align-items: center
+  &__link
+    color: #fff
+    font-weight: 900
+    font-size: 14px
+    display: flex
+    align-items: center
+    &:first-child
+      margin-right: 31px
+    &:nth-child(2)
+      margin-right: 22px
+  &__home
+    fill: #fff
+    width: 18px
+    height: 17px
+    margin-right: 6px
+  &__next
+    fill: #fff
+    width: 15px
+    height: 7px
+    margin-left: 10px
+  &__prev
+    fill: #fff
+    width: 15px
+    height: 7px
+    margin-right: 9px
+
+.clock
+  margin-right: 22px
+  display: flex
+  align-items: center
+  &__img
+    margin-right: 5px
+    width: 15px
+    height: 15px
+    opacity: 0.4
+  &__date
+    color: #ffffff
+    opacity: 0.85
+    font-size: 12px
+    mix-blend-mode: normal
+
+.like
+  &__counter
+    &--article
+      color: #ffffff
+      opacity: 0.85
+      font-size: 12px
+      mix-blend-mode: normal
+
+.comment
+  &__counter
+    &--article
+      color: #ffffff
+      opacity: 0.85
+      font-size: 12px
+      mix-blend-mode: normal

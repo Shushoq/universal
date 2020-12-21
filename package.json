@@ -9,6 +9,9 @@
   "author": "Shushoq",
   "license": "ISC",
   "dependencies": {
+    "inputmask": "^5.0.5",
+    "just-validate": "^1.5.0",
+    "sweetalert2": "^10.12.5",
     "swiper": "^6.4.1"
   },
   "devDependencies": {

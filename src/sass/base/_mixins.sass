@@ -14,3 +14,20 @@
   white-space: nowrap
   overflow: hidden
   text-overflow: ellipsis
+
+@mixin link-hover
+  &::after
+    content: ''
+    position: absolute
+    left: 0
+    bottom: -5px
+    width: 0
+    height: 1px
+    background-color: darken($dark-color,20%)
+    transition: color 0.3s ease, width 0.3s ease
+  &:hover
+    color: darken($dark-color,20% )
+    transition: color 0.3s ease
+  &:hover::after
+    width: 100%
+    transition: width 0.3s ease

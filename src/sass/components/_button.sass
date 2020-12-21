@@ -7,6 +7,9 @@
   color: $light-color
   background-color: $accent-color
   border-radius: 20px
+  &__link
+    display: inline-block
+    padding: 13px 40px 11px 20px
   &__arrow
     position: relative
     text-align: left
@@ -22,3 +25,11 @@
       background-repeat: no-repeat
       background-size: cover
       background-position: center
+
+@media(hover: hover) and (pointer: fine)
+  .button
+    transition: background-color 0.3s ease, box-shadow 0.3s ease
+    &:hover
+      background-color: darken($accent-color, 15%)
+      transition: background-color 0.3s ease, box-shadow 0.3s ease
+      box-shadow: 0 1px 3px $accent-color

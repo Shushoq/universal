@@ -1,0 +1,264 @@
+.post
+  position: relative
+  padding-top: 62px
+  padding-bottom: 70px
+  background-color: #fff
+  &__wrapper
+  &__material
+    float: right
+    margin-top: -76px
+    width: 263px
+  &__author
+  &__tags
+    display: flex
+    margin-top: 43px
+    margin-bottom: 59px
+  &__tag
+    margin-right: 8px
+    &-link
+      display: inline-block
+      padding: 8px 15px 4px
+      font-weight: 900
+      font-size: 14px
+      color: $dark-color
+      border: 1px solid #D9DADB
+      border-radius: 5px
+  &__letter
+    margin-top: 36px
+    margin-right: 10px
+    margin-left: -6px
+    font-weight: 900
+    font-size: 100px
+    color: #4592FF
+    float: left
+  &__text
+    max-width: 622px
+    margin-bottom: 30px
+    color: $primary-color
+    font-size: 18px
+    line-height: 30px
+  &__quote
+    position: relative
+    max-width: 622px
+    margin-top: 80px
+    margin-bottom: 45px
+    font-family: "Roboto Slab", sans-serif
+    color: $dark-color
+    font-size: 25px
+    line-height: 30px
+    z-index: 10
+    &::before
+      content: ""
+      position: absolute
+      left: -20px
+      top: -22px
+      width: 70px
+      height: 70px
+      background-image: url("../img/quote.svg")
+      background-position: center
+      background-repeat: no-repeat
+      z-index: -1
+  &__title
+    margin-top: 45px
+    margin-bottom: 30px
+    font-family: "Roboto Slab", sans-serif
+    font-size: 25px
+    line-height: 30px
+    color: $dark-color
+  &__user
+    display: flex
+    align-items: center
+    padding: 0px 61px 0 30px
+    border-left: 1px solid #D9DADB
+  &__slider
+    margin-top: 57px
+    margin-bottom: 48px
+    width: 100%
+    height: 625px
+    border: 1px solid #D9DADB
+    border-radius: 10px
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    &-container
+      width: 100%
+      height: 555px
+      position: relative
+    &-bottom
+      height: 70px
+      display: flex
+      justify-content: space-between
+      padding-left: 35px
+    &-text
+      align-self: center
+      font-size: 14px
+      color: $primary-color
+    &-button
+      position: absolute
+      top: 50%
+      height: 60px
+      width: 60px
+      padding: 0
+      transform: translateY(-50%)
+      z-index: 2
+      &--prev
+        left: 34px
+      &--next
+        right: 34px
+  &__slide
+    width: 100%
+    height: 100%
+    &-img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+.slider
+  &__prev
+    width: 60px
+    height: 60px
+    fill: #fff
+    opacity: 0.4
+  &__next
+    width: 60px
+    height: 60px
+    fill: #fff
+    opacity: 0.4
+
+.watch
+  margin-right: 13px
+  &__img
+    width: 15px
+    height: 11px
+  &__counter
+    color: $grey-color
+    font-size: 12px
+
+.author
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: center
+  float: right
+  background-color: #ffffff
+  border: 1px solid #D9DADB
+  border-radius: 10px
+  overflow: hidden
+  padding: 35px 25px 50px 25px
+  margin-top: -162px
+  z-index: 15
+  width: 263px
+  &__img
+    width: 90px
+    height: 90px
+    margin-bottom: 15px
+    object-fit: cover
+    border-radius: 50%
+  &__name
+    margin-bottom: 9px
+    color: $dark-color
+    font-family: "Roboto Slab", sans-serif
+    font-size: 20px
+  &__job
+    margin-bottom: 19px
+    font-size: 14px
+    color: $primary-color
+  &__counter
+    margin-bottom: 21px
+    font-weight: 900
+    font-size: 14px
+    color: $dark-color
+  &__link
+    position: absolute
+    display: block
+    font-weight: 900
+    font-size: 14px
+    color: $dark-color
+    padding: 18px 25px 15px
+    left: 0
+    right: 0
+    bottom: 0
+    border-top: 1px solid #D9DADB
+    text-align: center
+
+.repost
+  display: flex
+  flex-wrap: wrap
+  padding: 32px 0 20px
+  border-top: 1px solid #D9DADB
+  max-width: 653px
+  &__title
+    flex-basis: 100%
+    margin-bottom: 25px
+    font-family: "Roboto Slab", sans-serif
+    font-size: 25px
+    color: $dark-color
+  &__link
+    background-color: #4592FF
+    padding: 11px 23px
+    border-radius: 20px
+    color: #fff
+    font-weight: 900
+    font-size: 14px
+    display: flex
+    align-items: center
+    &:not(:last-child)
+      margin-right: 15px
+
+.like
+  &__img
+    &--light
+      fill: #fff
+      width: 17px
+      height: 16px
+      margin-right: 8px
+  &__counter
+    &--light
+      margin-left: 8px
+      color: #FFC4C9
+.facebook
+  &__img
+    width: 10px
+    height: 18px
+    margin-right: 14px
+  &__counter
+    margin-left: 8px
+    color: #BBC6FF
+    font-size: 14px
+.twitter
+  &__img
+    width: 18px
+    height: 15px
+    margin-right: 8px
+  &__counter
+    margin-left: 8px
+    color: #C5E4FC
+    font-size: 14px
+
+@media(hover: hover) and (pointer: fine)
+  .post
+    &__tag
+      &-link
+        transition: background-color 0.3s ease, color 0.3s ease
+        &:hover
+          background-color: lighten(#30363D, 30%)
+          transition: background-color 0.3s ease, color 0.3s ease
+          color: $light-color
+    &__user
+      transition: background-color 0.3s ease, color 0.3s ease
+      &:hover
+        background-color: #d9dadb
+        transition: background-color 0.3s ease, color 0.3s ease
+        color: $light-color
+  .slider
+    &__next
+      &:hover
+        fill: $accent-color
+    &__prev
+  .repost
+    &__link
+      transition: background-color 0.3s ease, box-shadow 0.3s ease
+      &:hover
+        background-color: darken($accent-color, 15%)
+        transition: background-color 0.3s ease, box-shadow 0.3s ease
+        box-shadow: 0 1px 3px $accent-color

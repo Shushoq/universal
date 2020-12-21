@@ -18,3 +18,16 @@ const swiper = new Swiper('.news__slider', {
     bulletActiveClass: 'news__bullet--active',
   },
 });
+
+
+const swiper1 = new Swiper('.post__slider-container', {
+  direction: 'horizontal',
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
+  navigation: {
+    nextEl: '.post__slider-button--next',
+    prevEl: '.post__slider-button--prev',
+  },
+});

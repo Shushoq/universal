@@ -1,6 +1,10 @@
 @media (max-width: 1200px)
   .container
     max-width: 990px
+  .heading
+    &__icon
+      left: 100px
+      top: 0
   .search
     width: 250px
   .header
@@ -55,11 +59,36 @@
     &__items
       gap: 20px
 @media (max-width: 992px)
+  .container,
+  .container-s
+    max-width: 750px
+    width: 90%
+  .post
+    padding: 40px 0
+    &__author
+      margin-left: 20px
+    &__material
+      margin: 0 0 20px 20px
+    &__slider
+      height: 500px
+      &-container
+        height: 430px
+  .material
+    &__container
+      grid-template-columns: repeat(2,1fr)
+  .heading
+    padding: 40px 0
+    &__title
+      font-size: 44px
+      line-height: 58px
   .feed
     &__list
       margin-right: 0
   .sidebar
     display: none
+  .comments
+    margin: 0
+    margin-right: 5px
   .article
     &__list
       flex-wrap: wrap
@@ -202,6 +231,57 @@
         margin-bottom: 15px
 
 @media (max-width: 768px)
+  .container,
+  .container-s
+    max-width: 570px
+  .heading
+    &__title
+      font-size: 40px
+      line-height: 52px
+      max-width: 100%
+    &__text
+      font-size: 16px
+      line-height: 26px
+  .author
+    margin-top: -100px
+  .post
+    &__title
+      margin-top: 20px
+      margin-bottom: 20px
+    &__quote
+      font-size: 20px
+      line-height: 28px
+      margin-top: 40px
+      margin-bottom: 40px
+    &__text
+      font-size: 16px
+      line-height: 26px
+      margin-bottom: 20px
+    &__slider
+      height: 400px
+      &-button
+        display: none
+      &-container
+        height: 80%
+      &-bottom
+        height: 20%
+    &__tags
+      margin-top: 30px
+      margin-bottom: 30px
+  .material
+    &__main
+      padding: 40px 0
+  .comments
+    padding-top: 40px
+    &__title
+      font-size: 26px
+    &__counter
+      font-size: 26px
+    &__text
+      font-size: 14px
+      line-height: 22px
+    &__load
+      margin-bottom: 40px
   .hero
     &__content
       padding: 25px 25px 100px
@@ -229,7 +309,7 @@
       font-size: 26px
       line-height: 36px
   .feed
-    &__img
+    &__link
       width: 40%
   .footer
     &__social
@@ -245,9 +325,84 @@
           margin-right: 0
 
 @media (max-width: 576px)
-  .container
+  .container,
+  .container-s
     max-width: 87%
     padding: 0
+  .author
+    float: none
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 30px
+  .navigation
+    flex-wrap: wrap
+    justify-content: center
+    width: 170px
+    &__link
+      justify-content: center
+      &:first-child
+        justify-content: center
+        flex-basis: 100%
+        margin-right: 0
+        margin-bottom: 10px
+  .post
+    &__tags
+      flex-wrap: wrap
+    &__tag
+      margin-bottom: 8px
+    &__text
+      font-size: 14px
+      line-height: 24px
+    &__letter
+      margin-bottom: 14px
+    &__quote
+      &::before
+        left: -8px
+        top: -11px
+    &__slider
+      margin-top: 40px
+      margin-bottom: 40px
+      &-container
+        height: 70%
+      &-bottom
+        height: 30%
+        flex-direction: column
+        padding: 0
+      &-text
+        padding: 10px
+    &__user
+      border-left: none
+      border-top: 1px solid #d9dadb
+      padding: 10px
+  .repost
+    padding-bottom: 0
+    &__link
+      margin-bottom: 20px
+  .comments
+    &__item
+      &-reply
+        padding-left: 60px
+    &__new
+      &-title
+        margin-left: 0
+  .heading
+    padding-bottom: 80px
+    &__icon
+      left: 0
+      top: 45px
+    &__title
+      font-size: 25px
+      line-height: 37px
+    &__text
+      max-width: 100%
+  .comments
+    &__top
+      flex-wrap: wrap
+    &__counter
+      margin-right: 50px
+    &__add
+      margin-left: 0
+      margin-top: 10px
   .header
     &__container
       flex-wrap: wrap
@@ -257,9 +412,13 @@
       margin-top: 15px
   .hero
     &__content
-      display: none
+      padding: 25px
     &__sidebar
-      max-width: 100%
+      max-width: 150px
+      &-title
+        display: none
+      &-item
+        height: calc(470px/ 5)
   .article
     &__list
     &__item
@@ -289,8 +448,8 @@
     margin-bottom: 40px
     &__item
       flex-wrap: wrap
-    &__img
-      width: 100%
+    &__link
+      min-width: 100%
       margin-right: 0
       margin-bottom: 5px
     &__icon
@@ -337,7 +496,70 @@
         &:nth-child(-n+2)
           margin-bottom: 10px
 
-@media (max-width: 576px)
+@media (max-width: 520px)
+  .post
+    &__material
+      margin: 10px auto
+      float: none
+  .material
+    &__container
+      grid-template-columns: 1fr
+
+@media (max-width: 480px)
+  .post
+    &__slider
+      margin-top: 40px
+      margin-bottom: 40px
+      &-container
+        height: 65%
+      &-bottom
+        height: 35%
+  .repost
+    &__title
+      font-size: 22px
+    &__link
+      &:not(:last-child)
+        margin-right: 0
+      &:first-of-type
+        margin-right: 15px
+  .hero
+    &__content
+      &-title
+        font-size: 18px
+        line-height: 26px
+    &__sidebar
+      &-text
+        display: none
+      &-link
+        padding: 5px
+        display: flex
+        align-items: center
+        justify-content: center
+      &-subtitle
+        margin: 0
+        text-align: center
+        font-size: 10px
+  .comments
+    &__item
+      &-reply
+        padding-left: 30px
+    &__avatar
+      width: 50px
+      height: 50px
+    &__new
+      padding: 20px
+      &-img
+        width: 50px
+        height: 50px
+      &-title
+        font-size: 18px
+      &-form
+        &::after
+          top: 18px
+        &::before
+          top: 17px
+    &__counter
+      margin-right: 0
   .grid
     &__title
       font-size: 17px

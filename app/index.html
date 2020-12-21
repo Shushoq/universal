@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Unversal - новостной портал web-разработки и дизайна</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -44,6 +48,7 @@
   <main class="main">
     <section class="hero">
   <div class="hero__bg"></div>
+  <h1 class="visually-hidden">Unversal - новостной портал web-разработки и дизайна</h1>
   <div class="container">
     <div class="hero__wrapper">
       <div class="hero__content hero__content--active">
@@ -57,7 +62,7 @@
         <div class="hero__content-decr">
           <h3 class="hero__content-subtitle">javascript</h3>
           <h2 class="hero__content-title">Расширение Chrome защищает от атак</h2>
-          <button class="button button__arrow hero__button">Читать далее</button>
+          <a href="article.html" class="button button__arrow hero__button button__link">Читать далее</a>
         </div>
       </div>
 
@@ -72,7 +77,7 @@
         <div class="hero__content-decr">
           <h3 class="hero__content-subtitle">CSS</h3>
           <h2 class="hero__content-title">Как использовать CSS float после того, как вышел Flexbox</h2>
-          <button class="button button__arrow hero__button">Читать далее</button>
+          <a href="article.html" class="button button__arrow hero__button button__link">Читать далее</a>
         </div>
       </div>
 
@@ -87,7 +92,7 @@
         <div class="hero__content-decr">
           <h3 class="hero__content-subtitle">javascript</h3>
           <h2 class="hero__content-title">На каком стандарте писать скрипты, если я фрилансер</h2>
-          <button class="button button__arrow hero__button">Читать далее</button>
+          <a href="article.html" class="button button__arrow hero__button button__link">Читать далее</a>
         </div>
       </div>
 
@@ -102,7 +107,7 @@
         <div class="hero__content-decr">
           <h3 class="hero__content-subtitle">html</h3>
           <h2 class="hero__content-title">Правильно вставляем картинку на сайт для Retina дисплея</h2>
-          <button class="button button__arrow hero__button">Читать далее</button>
+          <a href="article.html" class="button button__arrow hero__button button__link">Читать далее</a>
         </div>
       </div>
 
@@ -117,7 +122,7 @@
         <div class="hero__content-decr">
           <h3 class="hero__content-subtitle">Web design</h3>
           <h2 class="hero__content-title">ТОП-10 плагинов для Figma</h2>
-          <button class="button button__arrow hero__button">Читать далее</button>
+          <a href="article.html" class="button button__arrow hero__button button__link">Читать далее</a>
         </div>
       </div>
 
@@ -132,7 +137,7 @@
         <div class="hero__content-decr">
           <h3 class="hero__content-subtitle">CSS</h3>
           <h2 class="hero__content-title">Возможности CSS Grid Layout , которые уже можно применять</h2>
-          <button class="button button__arrow hero__button">Читать далее</button>
+          <a href="article.html" class="button button__arrow hero__button button__link">Читать далее</a>
         </div>
       </div>
 
@@ -265,7 +270,7 @@
         <h3 class="grid__title grid__title--check">Чек-лист сдачи верстки вашему заказчику</h3>
         <span class="grid__file">PDF, 125 Мб</span>
 
-        <a href="#" class="grid__download">
+        <a href="img/file.svg" class="grid__download" download>
           <svg class="grid__download-img">
             <use xlink:href="img/sprite.svg#download"></use>
           </svg>Скачать</a>
@@ -355,7 +360,7 @@
     <section class="banner">
   <div class="container banner__container">
     <h3 class="banner__title">Расследование недели: сколько зарабатывает веб разработчик в Москве</h3>
-    <button class="button button__arrow banner__button">Читать статью</button>
+    <a href="article.html" class="button button__arrow banner__button button__link">Читать статью</a>
   </div>
 </section>
 
@@ -364,10 +369,11 @@
     <ul class="feed__list">
 
       <li class="feed__item">
-        <img src="img/feed-1.jpg" alt="#" class="feed__img">
+        <a href="#" class="feed__link"><img src="img/feed-1.jpg" alt="#" class="feed__img"></a>
         <div class="feed__content">
           <h4 class="feed__subtitle feed__subtitle--1">Новости</h4>
-          <h3 class="feed__title">Новый налоговый режим для фрилансеров — налог на проф. доход</h3>
+          <h3 class="feed__title"><a href="#" class="feed__title-link">Новый налоговый режим для фрилансеров — налог на
+              проф. доход</a></h3>
           <p class="feed__text">Руководитель налоговой заявил, что этот режим “поможет выйти из тени” тем, кто работает
             неофициально. Разобрались, как работает режим и кому он подходит, а кому нет.</p>
           <div class="feed__bottom">
@@ -386,17 +392,19 @@
             </div>
           </div>
         </div>
-        <svg class="feed__icon">
+        <svg class="feed__icon icon">
           <use xlink:href="img/sprite.svg#bookmark"></use>
         </svg>
       </li>
 
       <li class="feed__item">
-        <img src="img/feed-2.jpg" alt="Мужчина за ноутбуком, сидящий за столом" class="feed__img">
+        <a href="#" class="feed__link"><img src="img/feed-2.jpg" alt="Мужчина за ноутбуком, сидящий за столом"
+            class="feed__img"></a>
         <div class="feed__content">
           <h4 class="feed__subtitle feed__subtitle--2">Мнения</h4>
-          <h3 class="feed__title">Платные курсы — это не быстрый способ выйти на нужный уровень</h3>
-          <p class="feed__text">Среди новичков распространено мнение, что если пройти какой-то крутой онлайн-курс, то
+          <h3 class="feed__title"><a href="#" class="feed__title-link">Платные курсы — это не быстрый способ выйти на
+              нужный уровень</a></h3>
+          <p class="feed__text">Среди новичков распространено мнение, что если пройти какой&#8209;то крутой онлайн-курс, то
             это решит все проблемы. Но они не берут в расчет, что лучшее обучение — это практика. </p>
           <div class="feed__bottom">
             <time class="feed__date" datetime="2019-10-07">7 октября</time>
@@ -414,16 +422,17 @@
             </div>
           </div>
         </div>
-        <svg class="feed__icon">
+        <svg class="feed__icon icon">
           <use xlink:href="img/sprite.svg#bookmark"></use>
         </svg>
       </li>
 
       <li class="feed__item">
-        <img src="img/feed-3.jpg" alt="Программист за столом" class="feed__img">
+        <a href="#" class="feed__link"><img src="img/feed-3.jpg" alt="Программист за столом" class="feed__img"></a>
         <div class="feed__content">
           <h4 class="feed__subtitle feed__subtitle--3">Горячее</h4>
-          <h3 class="feed__title">Из-за ограничений стали недоступны серверы Telegram. К чему это может... </h3>
+          <h3 class="feed__title"><a href="#" class="feed__title-link">Из-за ограничений стали недоступны серверы
+              Telegram. К чему это может... </a></h3>
           <p class="feed__text">Сегодня мы узнали, что серверы Telegram не доступны на территории России. Разобрались,
             чем это грозит вам, если ваш бизнес зависит от этого мессенджера.</p>
           <div class="feed__bottom">
@@ -442,16 +451,17 @@
             </div>
           </div>
         </div>
-        <svg class="feed__icon">
+        <svg class="feed__icon icon">
           <use xlink:href="img/sprite.svg#bookmark"></use>
         </svg>
       </li>
 
       <li class="feed__item">
-        <img src="img/feed-4.jpg" alt="Ноутбук, книжки и очки" class="feed__img">
+        <a href="#" class="feed__link"><img src="img/feed-4.jpg" alt="Ноутбук, книжки и очки" class="feed__img"></a>
         <div class="feed__content">
           <h4 class="feed__subtitle feed__subtitle--4">Мнения</h4>
-          <h3 class="feed__title">В вашем портфолио могут быть фейковые проекты, если вы сделали...</h3>
+          <h3 class="feed__title"><a href="#" class="feed__title-link">В вашем портфолио могут быть фейковые проекты,
+              если вы сделали...</a></h3>
           <p class="feed__text">Один из читателей предположил, что если в портфолио положить несуществующий проект, то
             ничего страшного не произойдет. Он провел эксперимент и потенциальные заказчики... </p>
           <div class="feed__bottom">
@@ -470,17 +480,17 @@
             </div>
           </div>
         </div>
-        <svg class="feed__icon">
+        <svg class="feed__icon icon">
           <use xlink:href="img/sprite.svg#bookmark"></use>
         </svg>
       </li>
 
 
       <li class="feed__item">
-        <img src="img/feed-5.jpg" alt="Водопад" class="feed__img">
+        <a href="#" class="feed__link"><img src="img/feed-5.jpg" alt="Водопад" class="feed__img"></a>
         <div class="feed__content">
           <h4 class="feed__subtitle feed__subtitle--5">Горячее</h4>
-          <h3 class="feed__title">Список стран, куда можно улететь</h3>
+          <h3 class="feed__title"><a href="#" class="feed__title-link">Список стран, куда можно улететь</a></h3>
           <p class="feed__text">Если вы приняли решение переехать в другую страну, чтобы найти там работу, сначала
             посмотрите на список стран, который мы подготовили для вас. Внутри важная информация про...</p>
           <div class="feed__bottom">
@@ -499,16 +509,17 @@
             </div>
           </div>
         </div>
-        <svg class="feed__icon">
+        <svg class="feed__icon icon">
           <use xlink:href="img/sprite.svg#bookmark"></use>
         </svg>
       </li>
 
       <li class="feed__item">
-        <img src="img/feed-6.jpg" alt="Экран ноутбука" class="feed__img">
+        <a href="#" class="feed__link"><img src="img/feed-6.jpg" alt="Экран ноутбука" class="feed__img"></a>
         <div class="feed__content">
           <h4 class="feed__subtitle feed__subtitle--6">Подборки</h4>
-          <h3 class="feed__title">Список Youtube каналов для тех, кто только начинает изучать разработку</h3>
+          <h3 class="feed__title"><a href="#" class="feed__title-link">Список Youtube каналов для тех, кто только
+              начинает изучать разработку</a></h3>
           <p class="feed__text">Мы собрали на одной странице кучу ссылок на полезные русскоязычные каналы, посвященные
             айти. Тут можно найти видеоуроки, лекции и бесплатные курсы. </p>
           <div class="feed__bottom">
@@ -527,7 +538,7 @@
             </div>
           </div>
         </div>
-        <svg class="feed__icon">
+        <svg class="feed__icon icon">
           <use xlink:href="img/sprite.svg#bookmark"></use>
         </svg>
       </li>
@@ -543,6 +554,7 @@
             <div class="sidebar__content">
               <h3 class="sidebar__title">Работа на удаленке, как это теперь</h3>
               <span class="sidebar__time">15 минут назад</span>
+              <span class=sidebar__counter>1</span>
             </div>
           </a>
         </li>
@@ -552,6 +564,7 @@
             <div class="sidebar__content">
               <h3 class="sidebar__title">Для чего нужен Node.js и с чем...</h3>
               <span class="sidebar__time">32 минуты назад</span>
+              <span class=sidebar__counter>2</span>
             </div>
           </a>
         </li>
@@ -561,6 +574,7 @@
             <div class="sidebar__content">
               <h3 class="sidebar__title">Работа в Google: собеседования и...</h3>
               <span class="sidebar__time">38 минут назад</span>
+              <span class=sidebar__counter>3</span>
             </div>
           </a>
         </li>
@@ -570,6 +584,7 @@
             <div class="sidebar__content">
               <h3 class="sidebar__title">Переезд в Нью Йорк для работы по...</h3>
               <span class="sidebar__time">53 минуты назад</span>
+              <span class=sidebar__counter>4</span>
             </div>
           </a>
         </li>
@@ -579,6 +594,7 @@
             <div class="sidebar__content">
               <h3 class="sidebar__title">Почему родители против того, чтобы...</h3>
               <span class="sidebar__time">1 час назад</span>
+              <span class=sidebar__counter>5</span>
             </div>
           </a>
         </li>
@@ -586,8 +602,9 @@
           <a href="#" class="sidebar__link">
             <img src="img/sidebar-6.jpg" alt="4 ноутбука и рабочий стол" class="sidebar__img">
             <div class="sidebar__content">
-              <h3 class="sidebar__title">Прокрастинация:  побороть отклады...</h3>
+              <h3 class="sidebar__title">Прокрастинация: побороть отклады...</h3>
               <span class="sidebar__time">2 часа назад</span>
+              <span class=sidebar__counter>6</span>
             </div>
           </a>
         </li>
@@ -597,6 +614,7 @@
             <div class="sidebar__content">
               <h3 class="sidebar__title">Правки от заказчика могут быть...</h3>
               <span class="sidebar__time">2 часа назад</span>
+              <span class=sidebar__counter>7</span>
             </div>
           </a>
         </li>
@@ -631,69 +649,85 @@
                 <use xlink:href="img/sprite.svg#photo"></use>
               </svg>Смотреть фото <span>26</span></button>
           </div>
+
           <div class="news__item news__item--big swiper-slide">
             <span class="tagname news__tagname">Горячее</span>
             <div class="user news__user">
-              <img class="user__img user__img--news" src="img/news-1.png" alt="Аватар: Оксана Пушкина">
+              <img class="user__img user__img--news" src="img/avatar-2.jpg" alt="Аватар: Моника Гастамбиде">
               <div class="user__info">
-                <span class="user__name user__name--news">Оксана Пушкина</span>
-                <span class="user__job user__job--news">Фотограф</span>
+                <span class="user__name user__name--news">Моника Гастамбиде</span>
+                <span class="user__job user__job--news">Верстальщик</span>
               </div>
             </div>
             <h3 class="news__title news__title--big">
               <a href="#" class="news__link">
-                Выбор читателей: где удобнее работать фрилансеру
+                Выбор читателей: лучший coworking в Москве
               </a>
             </h3>
-            <button class="news__button button">Смотреть фото </button>
+            <button class="news__button button">
+              <svg class="news__button-img">
+                <use xlink:href="img/sprite.svg#photo"></use>
+              </svg>Смотреть фото <span>11</span></button>
           </div>
+
           <div class="news__item news__item--big swiper-slide">
             <span class="tagname news__tagname">Горячее</span>
             <div class="user news__user">
-              <img class="user__img user__img--news" src="img/news-1.png" alt="Аватар: Оксана Пушкина">
+              <img class="user__img user__img--news" src="img/avatar-3.jpg" alt="Аватар: Силене Оливейра">
               <div class="user__info">
-                <span class="user__name user__name--news">Оксана Пушкина</span>
-                <span class="user__job user__job--news">Фотограф</span>
+                <span class="user__name user__name--news">Силене Оливейра</span>
+                <span class="user__job user__job--news">Разработчик</span>
               </div>
             </div>
             <h3 class="news__title news__title--big">
               <a href="#" class="news__link">
-                Выбор читателей: где удобнее работать фрилансеру
+                Выбор читателей: лучшие JS плагины
               </a>
             </h3>
-            <button class="news__button button">Смотреть фото </button>
+            <button class="news__button button">
+              <svg class="news__button-img">
+                <use xlink:href="img/sprite.svg#photo"></use>
+              </svg>Смотреть фото <span>15</span></button>
           </div>
+
           <div class="news__item news__item--big swiper-slide">
             <span class="tagname news__tagname">Горячее</span>
             <div class="user news__user">
-              <img class="user__img user__img--news" src="img/news-1.png" alt="Аватар: Оксана Пушкина">
+              <img class="user__img user__img--news" src="img/avatar-4.jpg" alt="Аватар: Даниэль Рамос">
               <div class="user__info">
-                <span class="user__name user__name--news">Оксана Пушкина</span>
-                <span class="user__job user__job--news">Фотограф</span>
+                <span class="user__name user__name--news">Даниэль Рамос</span>
+                <span class="user__job user__job--news">Разработчик</span>
               </div>
             </div>
             <h3 class="news__title news__title--big">
               <a href="#" class="news__link">
-                Выбор читателей: где удобнее работать фрилансеру
+                Выбор читателей: как отказаться от Jquery в своих проектах
               </a>
             </h3>
-            <button class="news__button button">Смотреть фото </button>
+            <button class="news__button button">
+              <svg class="news__button-img">
+                <use xlink:href="img/sprite.svg#photo"></use>
+              </svg>Смотреть фото <span>22</span></button>
           </div>
+
           <div class="news__item news__item--big swiper-slide">
             <span class="tagname news__tagname">Горячее</span>
             <div class="user news__user">
-              <img class="user__img user__img--news" src="img/news-1.png" alt="Аватар: Оксана Пушкина">
+              <img class="user__img user__img--news" src="img/avatar-5.jpg" alt="Аватар: Анибаль Кортес">
               <div class="user__info">
-                <span class="user__name user__name--news">Оксана Пушкина</span>
-                <span class="user__job user__job--news">Фотограф</span>
+                <span class="user__name user__name--news">Анибаль Кортес</span>
+                <span class="user__job user__job--news">Web-дизайнер</span>
               </div>
             </div>
             <h3 class="news__title news__title--big">
               <a href="#" class="news__link">
-                Выбор читателей: где удобнее работать фрилансеру
+                Выбор читателей: лучшие бесплатные шрифты
               </a>
             </h3>
-            <button class="news__button button">Смотреть фото </button>
+            <button class="news__button button">
+              <svg class="news__button-img">
+                <use xlink:href="img/sprite.svg#photo"></use>
+              </svg>Смотреть фото <span>17</span></button>
           </div>
         </div>
       </div>
@@ -703,9 +737,9 @@
           <h4 class="news__subtitle">Карьера</h4>
           <h3 class="news__title news__title--mid">Вопросы на собеседовании для джуна</h3>
           <p class="news__text">Каверзные и не очень вопросы, которых боятся новички, когда идут на собеседование</p>
-          <button class="button button__arrow news__btn">Читать далее</button>
+          <a href="article.html" class="button button__arrow news__btn button__link">Читать далее</a>
         </div>
-        <img src="img/news-mid.png" alt="Мужчина с сумкой" class="news__img--mid">
+        <img src="img/news-mid.png" alt="Мужчина с сумкой" class="news__img news__img--mid">
       </div>
 
 
@@ -734,9 +768,11 @@
     <h2 class="subscribe__title">Подпишитесь на нашу рассылку</h2>
     <form class="subscribe__form form">
       <div class="form__content">
-        <input type="email" name="email" class="form__input" placeholder="Email">
+        <input type="email" name="email" class="form__input" placeholder="Email" data-validate-field="email">
         <button class="button form__button">Подписаться</button>
       </div>
+      <input type="hidden" name="admin_email[]" value="wywkoff@gmail.com">
+      <input type="hidden" name="form_subject" value="Подписка на рассылку Universal">
     </form>
   </div>
 </section>
@@ -809,7 +845,7 @@
         <li class="footer__social-item"><a href="#" class="footer__social-link">Контакты</a></li>
         <li class="footer__social-item"><a href="#" class="footer__social-link">Работа у нас</a></li>
         <li class="footer__social-item"><a href="#" class="footer__social-link">Реклама</a></li>
-        <li class="footer__social-item"><a href="#" class="footer__social-link">Обратная связь</a></li>
+        <li class="footer__social-item"><button class="footer__social-link modal-btn" data-path="first" data-speed="200">Обратная связь</button></li>
       </ul>
       <div class="social footer__media">
         <a href="https://www.facebook.com/" class="social__link social__link--facebook social__link--footer"
@@ -846,6 +882,44 @@
   </div>
 </footer>
 
+
+  <div class="modal">
+    <div class="modal__container" data-target="first">
+      <div class="modal__content">
+        <h3 class="modal__title">Форма обратной связи</h3>
+        <form class="form modal__form modal__form--feedback">
+          <div class="modal__input-group">
+            <input class="input modal__input name" type="text" name="name" placeholder="Имя*"
+              data-validate-field="name">
+          </div>
+          <div class="modal__input-group">
+            <input class="input modal__input" type="tel" name="phone" placeholder="Телефон*" data-validate-field="tel">
+          </div>
+          <div class="modal__input-group">
+            <input class="input modal__input" type="email" name="email" placeholder="Email*"
+              data-validate-field="email">
+          </div>
+          <textarea class="textarea modal__textarea" name="message" placeholder="Сообщение"></textarea>
+          <div class="modal__form-bottom">
+            <button class="btn btn-trans modal__btn" name="button" value="booking-form">Отправить</button>
+            <span class="modal__form-text">* обазятельные поля</span>
+          </div>
+          <input type="hidden" name="admin_email[]" value="wywkoff@gmail.com">
+          <input type="hidden" name="form_subject" value="Заявка с сайта Universal">
+        </form>
+        <button class="modal__close" aria-label="Close modal window">
+          <svg class="modal__close-btn">
+            <use xlink:href="img/sprite.svg#modal-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <button class="to-top" id="to-top">
+    <svg class="to-top__img">
+      <use xlink:href="img/sprite.svg#to-top"></use>
+    </svg>
+  </button>
   <script src="js/main.js"></script>
 </body>
 

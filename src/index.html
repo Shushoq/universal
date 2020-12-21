@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Unversal - новостной портал web-разработки и дизайна</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -20,6 +24,44 @@
     @include('html/subscribe.html')
   </main>
   @include('html/footer.html')
+
+  <div class="modal">
+    <div class="modal__container" data-target="first">
+      <div class="modal__content">
+        <h3 class="modal__title">Форма обратной связи</h3>
+        <form class="form modal__form modal__form--feedback">
+          <div class="modal__input-group">
+            <input class="input modal__input name" type="text" name="name" placeholder="Имя*"
+              data-validate-field="name">
+          </div>
+          <div class="modal__input-group">
+            <input class="input modal__input" type="tel" name="phone" placeholder="Телефон*" data-validate-field="tel">
+          </div>
+          <div class="modal__input-group">
+            <input class="input modal__input" type="email" name="email" placeholder="Email*"
+              data-validate-field="email">
+          </div>
+          <textarea class="textarea modal__textarea" name="message" placeholder="Сообщение"></textarea>
+          <div class="modal__form-bottom">
+            <button class="btn btn-trans modal__btn" name="button" value="booking-form">Отправить</button>
+            <span class="modal__form-text">* обазятельные поля</span>
+          </div>
+          <input type="hidden" name="admin_email[]" value="wywkoff@gmail.com">
+          <input type="hidden" name="form_subject" value="Заявка с сайта Universal">
+        </form>
+        <button class="modal__close" aria-label="Close modal window">
+          <svg class="modal__close-btn">
+            <use xlink:href="img/sprite.svg#modal-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <button class="to-top" id="to-top">
+    <svg class="to-top__img">
+      <use xlink:href="img/sprite.svg#to-top"></use>
+    </svg>
+  </button>
   <script src="js/main.js"></script>
 </body>
 
