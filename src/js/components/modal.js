@@ -90,14 +90,9 @@ class Modal {
       this.modalContainer.classList.remove(this.animation);
       this.modal.classList.remove('is-open');
       this.modalContainer.classList.remove('modal-open');
+
       let resetForm = document.querySelector('.modal__form--feedback')
       resetForm.reset()
-
-      // const valid = document.querySelectorAll('.js-validate-error-label')
-      // valid.forEach(el => {
-      //   el.setAttribute('style', 'display: none;')
-      // })
-
       const valid = document.querySelectorAll('.js-validate-error-label')
       valid.forEach(el => {
         el.remove()

@@ -57,13 +57,16 @@
       align-self: flex-end
       font-size: 16px
       line-height: 25px
+      @include transfer2
     &--big
       margin-bottom: 25px
+      @include transfer3
     &--check
       margin-bottom: 11px
       font-size: 16px
       line-height: 25px
       color: $light-color
+      @include transfer2
     &--full
       font-size: 16px
       line-height: 25px
@@ -71,6 +74,7 @@
       letter-spacing: 0.5px
       text-transform: uppercase
       margin-bottom: 27px
+      @include transfer3
   &__download
     position: absolute
     left: 0
@@ -96,6 +100,7 @@
   &__text
     font-size: 14px
     line-height: 20px
+    @include transfer4
   &__tags
     display: flex
     flex-wrap: wrap

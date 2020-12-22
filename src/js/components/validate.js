@@ -85,7 +85,6 @@ if (newComments) {
     text: {
       required: true,
       minLength: 100,
-      maxLength: 300,
     }
   });
 }

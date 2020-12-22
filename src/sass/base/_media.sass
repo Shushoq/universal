@@ -304,13 +304,24 @@
     &__user
       &-text
         max-width: 125px
+    &__comment
+      display: none
+    &__subtitle
+      &--mid
+        padding: 15px 26px 15px
+    &__tags
+      padding: 15px
+    &__tag
+      margin-bottom: 9px
+      &-link
+        padding: 7px 13px
   .banner
     &__title
       font-size: 26px
       line-height: 36px
   .feed
     &__link
-      width: 40%
+      min-width: 45%
   .footer
     &__social
       flex-wrap: wrap
@@ -321,13 +332,14 @@
         width: 100%
         margin-bottom: 15px
       &-item
+        flex-basis: 0
         &:not(:last-child)
           margin-right: 0
 
 @media (max-width: 576px)
   .container,
   .container-s
-    max-width: 87%
+    max-width: 90%
     padding: 0
   .author
     float: none
@@ -442,6 +454,17 @@
     &__user
       &-text
         max-width: 80%
+    &__comment
+      display: flex
+    &__subtitle
+      &--mid
+        padding: 23px 26px 20px
+    &__tags
+      padding: 25px 15px
+    &__tag
+      margin-bottom: 13px
+      &-link
+        padding: 7px 15px
   .error
     padding: 50px
     &__title
@@ -473,6 +496,9 @@
         grid-column: span 1
     &__slider
       grid-column: span 1
+    &__img
+      &--mid
+        display: none
   .subscribe
     padding: 40px 0
     &__title

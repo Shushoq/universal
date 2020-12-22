@@ -19,6 +19,7 @@
         height: 1px
         background-color: #D9DADB
   &__link
+    display: block
     margin-right: 25px
     max-width: 336px
     min-width: 336px
@@ -97,8 +98,11 @@
   cursor: pointer
   fill: #BCBFC2
   transition: fill 0.3s ease
-  &:hover
-    fill: #FF4F52
-    transition: fill 0.3s ease
   &--active
     fill: #FF4F52
+
+@media(hover: hover) and (pointer: fine)
+  .icon
+    &:hover
+      fill: #FF4F52
+      transition: fill 0.3s ease
