@@ -413,6 +413,7 @@
   .hero
     &__content
       padding: 25px
+      background-image: url("../img/hero-1-small.jpg")
     &__sidebar
       max-width: 150px
       &-title
@@ -441,7 +442,11 @@
     &__user
       &-text
         max-width: 80%
+  .error
+    padding: 50px
+    &__title
   .banner
+    background-image: url("../img/banner-small.jpg")
     margin: 40px 0
     padding: 40px 0
   .feed
@@ -506,6 +511,12 @@
       grid-template-columns: 1fr
 
 @media (max-width: 480px)
+  .modal
+    &__form
+      &-text
+        width: 100%
+        margin-top: 10px
+        text-align: left
   .post
     &__slider
       margin-top: 40px
@@ -517,11 +528,6 @@
   .repost
     &__title
       font-size: 22px
-    &__link
-      &:not(:last-child)
-        margin-right: 0
-      &:first-of-type
-        margin-right: 15px
   .hero
     &__content
       &-title
@@ -587,3 +593,11 @@
       &--footer
         &:not(:last-child)
           margin-right: 10px
+
+@media (max-width: 450px)
+  .repost
+    &__link
+      &:not(:last-child)
+        margin-right: 0
+      &:first-of-type
+        margin-right: 15px

@@ -1,9 +1,10 @@
 import Inputmask from 'inputmask'
 import JustValidate from "../../../node_modules/just-validate/dist/js/just-validate"
 import Swal from 'sweetalert2'
-import "./modal"
+import {
+  modal
+} from './modal';
 let swal = require('sweetalert2')
-
 
 let tel = document.querySelectorAll('input[type=tel')
 let telMask = new Inputmask("+7 (999) 999-99-99");
@@ -25,6 +26,9 @@ function validateForms(selector, rules, messages) {
       text: {
         required: 'Введите сообщение',
         minLength: 'Сообщение должно быть больше 100 символов'
+      },
+      checkbox: {
+        required: 'Обязательное условие',
       }
     },
     submitHandler: function (form, values, ajax) {
@@ -36,6 +40,9 @@ function validateForms(selector, rules, messages) {
         })
         .then(function (data) {
           form.reset()
+          if (selector === ".modal__form--feedback") {
+            modal.close()
+          }
           swal.fire({
             title: 'Спасибо!',
             icon: 'success',
@@ -57,16 +64,9 @@ if (feedBackForm) {
       required: true,
       email: true
     },
-    name: {
-      required: true,
-      minLength: 2,
-    },
-    tel: {
-      required: true,
-      strength: {
-        custom: '[^_]$'
-      },
-    },
+    checkbox: {
+      required: true
+    }
   });
 }
 

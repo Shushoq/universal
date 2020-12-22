@@ -3,12 +3,12 @@
     <div class="comments__top">
       <h2 class="comments__title">Комментарии</h2>
       <span class="comments__counter">19</span>
-      <button class="comments__add">
+      <a href="#add" class="comments__add">
         <svg class="comments__img">
           <use xlink:href="img/sprite.svg#pencil"></use>
         </svg>
         Добавить комментарии
-      </button>
+      </a>
     </div>
     <div class="comments__wrapper">
       <div class="comments__item">
@@ -20,16 +20,16 @@
           </div>
           <p class="comments__text">Хочу заметить, что автор этой статьи не написал, что не все могут получить статус
             самозанятого. Этот режим еще не ввели во всех регионах. Но если в вашем регионе есть, то поздравляю.</p>
-          <div class="comments__bottom">
+          <div class="comments__bottom comment">
             <svg class="comment__img comment__img--grey comments__comment">
               <use xlink:href="img/sprite.svg#comment"></use>
             </svg>
             <span class="comments__bottom-text">Ответить</span>
-            <svg class="comments__thumb">
+            <svg class="comments__thumb comments__thumb--up">
               <use xlink:href="img/sprite.svg#thumbup"></use>
             </svg>
-            <span class="comments__bottom-counter">+10</span>
-            <svg class="comments__thumb">
+            <span class="comments__bottom-counter comments__bottom-counter--up">+10</span>
+            <svg class="comments__thumb comments__thumb--down">
               <use xlink:href="img/sprite.svg#thumbdown"></use>
             </svg>
           </div>
@@ -44,16 +44,16 @@
           </div>
           <p class="comments__text">Да, спасибо за замечание. Добавлю список регионов, где этот режим уже действует и
             буду периодически обновлять его. Потому что обещали ввести этот режим везде. </p>
-          <div class="comments__bottom">
+          <div class="comments__bottom comment">
             <svg class="comment__img comment__img--grey comments__comment">
               <use xlink:href="img/sprite.svg#comment"></use>
             </svg>
             <span class="comments__bottom-text">Ответить</span>
-            <svg class="comments__thumb">
+            <svg class="comments__thumb comments__thumb--up">
               <use xlink:href="img/sprite.svg#thumbup"></use>
             </svg>
             <span class="comments__bottom-counter">0</span>
-            <svg class="comments__thumb">
+            <svg class="comments__thumb comments__thumb--down">
               <use xlink:href="img/sprite.svg#thumbdown"></use>
             </svg>
           </div>
@@ -69,16 +69,16 @@
           <p class="comments__text comments__text--mb">Если честно, кажется, что этот налоговый режим ввели, чтобы
             собрать больше денег с народа. Я, конечно, понимаю, что бюджеты надо пополнять, но не лучше ли обложить
             налогом богатых?</p>
-          <div class="comments__bottom">
+          <div class="comments__bottom comment">
             <svg class="comment__img comment__img--grey comments__comment">
               <use xlink:href="img/sprite.svg#comment"></use>
             </svg>
             <span class="comments__bottom-text">Ответить</span>
-            <svg class="comments__thumb">
+            <svg class="comments__thumb comments__thumb--up">
               <use xlink:href="img/sprite.svg#thumbup"></use>
             </svg>
-            <span class="comments__bottom-counter">-3</span>
-            <svg class="comments__thumb">
+            <span class="comments__bottom-counter comments__bottom-counter--down">-3</span>
+            <svg class="comments__thumb comments__thumb--down">
               <use xlink:href="img/sprite.svg#thumbdown"></use>
             </svg>
           </div>
@@ -93,16 +93,65 @@
           </div>
           <p class="comments__text">Такой режим уже давно работает в продвинутых странах, почему его ввели только
             сейчас, непонятно. Хотелось бы, чтобы это все заработало в моем регионе, буду в числе первых!</p>
-          <div class="comments__bottom">
+          <div class="comments__bottom comment">
             <svg class="comment__img comment__img--grey comments__comment">
               <use xlink:href="img/sprite.svg#comment"></use>
             </svg>
             <span class="comments__bottom-text">Ответить</span>
-            <svg class="comments__thumb">
+            <svg class="comments__thumb comments__thumb--up">
               <use xlink:href="img/sprite.svg#thumbup"></use>
             </svg>
             <span class="comments__bottom-counter">0</span>
-            <svg class="comments__thumb">
+            <svg class="comments__thumb comments__thumb--down">
+              <use xlink:href="img/sprite.svg#thumbdown"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="comments__item comments__item--hidden">
+        <img src="img/comment-2.jpg" alt="Аватар: Мира Стахова" class="comments__avatar">
+        <div class="comments__info">
+          <div class="comments__author">
+            <span class="comments__name">Мира Стахова</span>
+            <time class="comments__date" datetime="2019-07-17T10:30">17 июля, 18:41</time>
+          </div>
+          <p class="comments__text">Да, спасибо за замечание. Добавлю список регионов, где этот режим уже действует и
+            буду периодически обновлять его. Потому что обещали ввести этот режим везде. </p>
+          <div class="comments__bottom comment">
+            <svg class="comment__img comment__img--grey comments__comment">
+              <use xlink:href="img/sprite.svg#comment"></use>
+            </svg>
+            <span class="comments__bottom-text">Ответить</span>
+            <svg class="comments__thumb comments__thumb--up">
+              <use xlink:href="img/sprite.svg#thumbup"></use>
+            </svg>
+            <span class="comments__bottom-counter">0</span>
+            <svg class="comments__thumb comments__thumb--down">
+              <use xlink:href="img/sprite.svg#thumbdown"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="comments__item comments__item--hidden">
+        <img src="img/comment-3.jpg" alt="Аватар: Анжела Иванова" class="comments__avatar">
+        <div class="comments__info">
+          <div class="comments__author">
+            <span class="comments__name">Анжела Иванова</span>
+            <time class="comments__date" datetime="2019-07-17T10:30">17 июля, 18:53</time>
+          </div>
+          <p class="comments__text comments__text--mb">Если честно, кажется, что этот налоговый режим ввели, чтобы
+            собрать больше денег с народа. Я, конечно, понимаю, что бюджеты надо пополнять, но не лучше ли обложить
+            налогом богатых?</p>
+          <div class="comments__bottom comment">
+            <svg class="comment__img comment__img--grey comments__comment">
+              <use xlink:href="img/sprite.svg#comment"></use>
+            </svg>
+            <span class="comments__bottom-text">Ответить</span>
+            <svg class="comments__thumb comments__thumb--up">
+              <use xlink:href="img/sprite.svg#thumbup"></use>
+            </svg>
+            <span class="comments__bottom-counter comments__bottom-counter--down">-3</span>
+            <svg class="comments__thumb comments__thumb--down">
               <use xlink:href="img/sprite.svg#thumbdown"></use>
             </svg>
           </div>
@@ -117,64 +166,16 @@
           </div>
           <p class="comments__text">Такой режим уже давно работает в продвинутых странах, почему его ввели только
             сейчас, непонятно. Хотелось бы, чтобы это все заработало в моем регионе, буду в числе первых!</p>
-          <div class="comments__bottom">
+          <div class="comments__bottom comment">
             <svg class="comment__img comment__img--grey comments__comment">
               <use xlink:href="img/sprite.svg#comment"></use>
             </svg>
             <span class="comments__bottom-text">Ответить</span>
-            <svg class="comments__thumb">
+            <svg class="comments__thumb comments__thumb--up">
               <use xlink:href="img/sprite.svg#thumbup"></use>
             </svg>
             <span class="comments__bottom-counter">0</span>
-            <svg class="comments__thumb">
-              <use xlink:href="img/sprite.svg#thumbdown"></use>
-            </svg>
-          </div>
-        </div>
-      </div>
-      <div class="comments__item comments__item--hidden">
-        <img src="img/comment-4.jpg" alt="Аватар: Крис Яков" class="comments__avatar">
-        <div class="comments__info">
-          <div class="comments__author">
-            <span class="comments__name">Крис Яков</span>
-            <time class="comments__date" datetime="2019-07-17T10:30">17 июля, 19:12</time>
-          </div>
-          <p class="comments__text">Такой режим уже давно работает в продвинутых странах, почему его ввели только
-            сейчас, непонятно. Хотелось бы, чтобы это все заработало в моем регионе, буду в числе первых!</p>
-          <div class="comments__bottom">
-            <svg class="comment__img comment__img--grey comments__comment">
-              <use xlink:href="img/sprite.svg#comment"></use>
-            </svg>
-            <span class="comments__bottom-text">Ответить</span>
-            <svg class="comments__thumb">
-              <use xlink:href="img/sprite.svg#thumbup"></use>
-            </svg>
-            <span class="comments__bottom-counter">0</span>
-            <svg class="comments__thumb">
-              <use xlink:href="img/sprite.svg#thumbdown"></use>
-            </svg>
-          </div>
-        </div>
-      </div>
-      <div class="comments__item comments__item--hidden">
-        <img src="img/comment-4.jpg" alt="Аватар: Крис Яков" class="comments__avatar">
-        <div class="comments__info">
-          <div class="comments__author">
-            <span class="comments__name">Крис Яков</span>
-            <time class="comments__date" datetime="2019-07-17T10:30">17 июля, 19:12</time>
-          </div>
-          <p class="comments__text">Такой режим уже давно работает в продвинутых странах, почему его ввели только
-            сейчас, непонятно. Хотелось бы, чтобы это все заработало в моем регионе, буду в числе первых!</p>
-          <div class="comments__bottom">
-            <svg class="comment__img comment__img--grey comments__comment">
-              <use xlink:href="img/sprite.svg#comment"></use>
-            </svg>
-            <span class="comments__bottom-text">Ответить</span>
-            <svg class="comments__thumb">
-              <use xlink:href="img/sprite.svg#thumbup"></use>
-            </svg>
-            <span class="comments__bottom-counter">0</span>
-            <svg class="comments__thumb">
+            <svg class="comments__thumb comments__thumb--down">
               <use xlink:href="img/sprite.svg#thumbdown"></use>
             </svg>
           </div>
@@ -186,7 +187,7 @@
         </svg>
         загрузить еще
       </button>
-      <div class="comments__new">
+      <div id="add" class="comments__new">
         <h3 class="comments__new-title">Что вы думаете на этот счет?</h3>
         <div class="comments__new-wrapper">
           <img class="comments__new-img" src="img/comment-new.jpg" alt="Аватар">

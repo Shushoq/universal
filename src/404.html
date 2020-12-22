@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Онлайн статьи на IT тематику">
+    <title>Unversal - новостной портал web-разработки и дизайна</title>
+    <link href="fonts/Lato-Heavy.woff2" rel="preload" as="font" crossorigin>
+    <link href="fonts/Lato-Regular.woff2" rel="preload" as="font" crossorigin>
+    <link href="fonts/Lato-HeavyItalic.woff2" rel="preload" as="font" crossorigin>
+    <link href="fonts/RobotoSlab-Bold.woff2" rel="preload" as="font" crossorigin>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+
+<body class="page">
+  @include('html/header.html')
+  <main class="main">
+    <section class="error">
+      <div class="container">
+        <h2 class="error__title">Страница не найдена</h2>
+      </div>
+    </section>
+  </main>
+  @include('html/footer.html')
+
+  <div class="modal">
+    <div class="modal__container" data-target="first">
+      <div class="modal__content">
+        <h3 class="modal__title">Обратная связь</h3>
+        <form class="form modal__form modal__form--feedback">
+          <div class="modal__input-group">
+            <label for="select" class="modal__subtitle">Тема</label>
+            <select class="modal__input modal__select" name="select" id="select">
+              <option class="modal__option" selected disabled hidden>Выберите тему</option>
+              <option class="modal__option" value="CSS">CSS</option>
+              <option class="modal__option" value="JS">JavaScript</option>
+            </select>
+          </div>
+          <div class="modal__input-group">
+            <label for="message" class="modal__subtitle">Сообщение</label>
+            <textarea class="textarea modal__textarea" id="message" name="message" placeholder="Сообщение"></textarea>
+          </div>
+          <div class="modal__input-group">
+            <label for="email" class="modal__subtitle">Email</label>
+            <input class="input modal__input" id="email" type="email" name="email" placeholder="Email*"
+              data-validate-field="email">
+          </div>
+          <div class="modal__input-group modal__input-group--check">
+            <input class="modal__checkbox" type="checkbox" id="checkbox" data-validate-field="checkbox" checked>
+            <span class="modal__fake"></span>
+            <label class="modal__label " for="checkbox">Согласен с обработкой данных</label>
+          </div>
+          <button class="btn modal__btn button" name="button" value="booking-form">Отправить</button>
+          <input type="hidden" name="admin_email[]" value="wywkoff@gmail.com">
+          <input type="hidden" name="form_subject" value="Заявка с сайта Universal">
+        </form>
+        <button class="modal__close" aria-label="Close modal window">
+          <svg class="modal__close-btn">
+            <use xlink:href="img/sprite.svg#modal-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <button class="to-top" id="to-top">
+    <svg class="to-top__img">
+      <use xlink:href="img/sprite.svg#to-top"></use>
+    </svg>
+  </button>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

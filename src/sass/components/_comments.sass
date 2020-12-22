@@ -78,6 +78,10 @@
       margin: 0 10px
       font-weight: 900
       font-size: 12px
+      &--up
+        color: #3DC47E
+      &--down
+        color: #FF4F52
   &__comment
     margin-right: 5px
     width: 13.5px
@@ -86,6 +90,15 @@
     width: 14px
     height: 13px
     fill: #BCBFC2
+    transition: fill 0.2s ease
+    &--up
+      &:hover
+        fill: $accent-color
+        transition: fill 0.2s ease
+    &--down
+      &:hover
+        fill: #FF4F52
+        transition: fill 0.2s ease
   &__load
     margin-bottom: 60px
     display: flex

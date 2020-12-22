@@ -1,8 +1,10 @@
 import Swiper, {
   Navigation,
-  Pagination
+  Pagination,
+  Autoplay,
+  Keyboard
 } from 'swiper';
-Swiper.use([Navigation, Pagination]);
+Swiper.use([Navigation, Pagination, Autoplay, Keyboard]);
 
 const swiper = new Swiper('.news__slider', {
   direction: 'horizontal',
@@ -23,11 +25,12 @@ const swiper = new Swiper('.news__slider', {
 const swiper1 = new Swiper('.post__slider-container', {
   direction: 'horizontal',
   loop: true,
-  autoplay: {
-    delay: 3000,
-  },
   navigation: {
     nextEl: '.post__slider-button--next',
     prevEl: '.post__slider-button--prev',
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
   },
 });

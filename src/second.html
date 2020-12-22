@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Онлайн статьи на IT тематику">
+    <title>Unversal - новостной портал web-разработки и дизайна</title>
+    <link href="fonts/Lato-Heavy.woff2" rel="preload" as="font" crossorigin>
+    <link href="fonts/Lato-Regular.woff2" rel="preload" as="font" crossorigin>
+    <link href="fonts/Lato-HeavyItalic.woff2" rel="preload" as="font" crossorigin>
+    <link href="fonts/RobotoSlab-Bold.woff2" rel="preload" as="font" crossorigin>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+
+<body class="page">
+  <header class="header header--light">
+    <div class="container header__container">
+      <a class="header__logo" href="index.html" aria-label="Логотип: Universal">
+        <img class="header__logo-img" src="img/logo-light.svg" alt="">
+      </a>
+      <nav class="nav nav--light">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Статьи</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Новости</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Курсы</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">HTML</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">CSS</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">JavaScript</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Web Design</a></li>
+        </ul>
+      </nav>
+      <form action="#" class="search search--light header__search">
+        <input class="search__input" type="search" placeholder="Поиск">
+        <button class="search__button">
+          <svg class="search__button-img">
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </form>
+      <div class="burger burger--dark">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="heading heading--second">
+      <div class="container-s heading__container-s">
+        <div class="heading__top">
+          <h4 class="heading__tag">Новости</h4>
+          <div class="navigation heading__navigation">
+            <a href="index.html" class="navigation__link">
+              <svg class="navigation__home">
+                <use xlink:href="img/sprite.svg#home"></use>
+              </svg>
+              На главную
+            </a>
+            <a href="article.html" class="navigation__link">
+              <svg class="navigation__prev">
+                <use xlink:href="img/sprite.svg#prev"></use>
+              </svg>
+              Назад
+            </a>
+            <a href="first.html" class="navigation__link">
+              Вперёд
+              <svg class="navigation__next">
+                <use xlink:href="img/sprite.svg#next"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <h1 class="heading__title">Новый налоговый режим для фрилансеров — налог на проф. доход</h1>
+        <p class="heading__text">Руководитель налоговой заявил, что этот режим “поможет выйти из тени” тем, кто работает
+          неофициально. Разобрались, как работает режим и кому он подходит, а кому нет.</p>
+        <div class="heading__bottom">
+          <div class="clock">
+            <svg class="clock__img">
+              <use xlink:href="img/sprite.svg#time"></use>
+            </svg>
+            <time class="clock__date" datetime="2019-08-06T10:30">6 августа, 10:30</time>
+          </div>
+          <div class="like heading__like">
+            <svg class="like__img like__img--grey">
+              <use xlink:href="img/sprite.svg#like"></use>
+            </svg>
+            <span class="like__counter like__counter--article">830</span>
+          </div>
+          <div class="comment">
+            <svg class="comment__img comment__img--grey">
+              <use xlink:href="img/sprite.svg#comment"></use>
+            </svg>
+            <span class="comment__counter comment__counter--article">19</span>
+          </div>
+        </div>
+        <svg class="heading__icon icon">
+          <use xlink:href="img/sprite.svg#bookmark"></use>
+        </svg>
+      </div>
+    </section>
+
+    @include('html/post.html')
+    @include('html/cards.html')
+    @include('html/comment.html')
+    @include('html/subscribe.html')
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <nav class="footer__menu">
+        <div class="footer__inner footer__inner--1">
+          <h3 class="footer__title">Новости</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Обновления</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Экспресс</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Politics</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Solar Eclipse</a></li>
+          </ul>
+        </div>
+        <div class="footer__inner footer__inner--2">
+          <h3 class="footer__title">Статьи</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">HTML</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">CSS</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">JavaScript</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Web Design</a></li>
+          </ul>
+        </div>
+        <div class="footer__inner footer__inner--3">
+          <h3 class="footer__title">Видеоуроки</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Скринкасты</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Уроки</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Вебинары</a></li>
+          </ul>
+        </div>
+        <div class="footer__inner footer__inner--4">
+          <h3 class="footer__title">Курсы</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Платные интенсивы</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Бесплатные стримы</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Мастер-классы</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Менторство</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Буткемпы</a></li>
+          </ul>
+        </div>
+        <div class="footer__inner footer__inner--5">
+          <h3 class="footer__title">Информация</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Политика данных</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Оферта сайта</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Реквизиты</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer__inner footer__inner--6">
+          <h3 class="footer__title">Категории</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Популярное</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Горячее</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Подборки</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Мнения</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Карьера</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer__social">
+        <a href="index.html" class="footer__logo-link">
+          <img src="img/footer-logo.svg" alt="Логотип: Universal" class="footer__logo">
+        </a>
+        <ul class="footer__social-menu">
+          <li class="footer__social-item"><a href="#" class="footer__social-link">Контакты</a></li>
+          <li class="footer__social-item"><a href="#" class="footer__social-link">Работа у нас</a></li>
+          <li class="footer__social-item"><a href="#" class="footer__social-link">Реклама</a></li>
+          <li class="footer__social-item"><button class="footer__social-link modal-btn" data-path="first" data-speed="200">Партнёрство</button></li>
+        </ul>
+        <div class="social footer__media">
+          <a href="https://www.facebook.com/" class="social__link social__link--facebook social__link--footer"
+            target="_blank">
+            <svg class="social__img">
+              <use xlink:href="img/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+          <a href="https://twitter.com/" class="social__link social__link--twitter social__link--footer" target="_blank">
+            <svg class="social__img">
+              <use xlink:href="img/sprite.svg#twitter"></use>
+            </svg>
+          </a>
+          <a href="https://www.youtube.com/" class="social__link social__link--youtube social__link--footer"
+            target="_blank">
+            <svg class="social__img">
+              <use xlink:href="img/sprite.svg#youtube"></use>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/" class="social__link social__link--instagram social__link--footer"
+            target="_blank">
+            <svg class="social__img">
+              <use xlink:href="img/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__copy">
+        <p class="footer__copy-descr">Universal — это онлайн издание, в котором мы публикуем полезные материалы о веб
+          разработке: статьи, новости, видеоуроки, подборки, ссылки и курсы. Материалы на сайте бесплатны, но при
+          копировании, указывайте ссылку.</p>
+        <span class="footer__copy-text">© 2020 Universal Magazine</span>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="modal">
+    <div class="modal__container" data-target="first">
+      <div class="modal__content">
+        <h3 class="modal__title">Обратная связь</h3>
+        <form class="form modal__form modal__form--feedback">
+          <div class="modal__input-group">
+            <label for="select" class="modal__subtitle">Тема</label>
+            <select class="modal__input modal__select" name="select" id="select">
+              <option class="modal__option" selected disabled hidden>Выберите тему</option>
+              <option class="modal__option" value="CSS">CSS</option>
+              <option class="modal__option" value="JS">JavaScript</option>
+            </select>
+          </div>
+          <div class="modal__input-group">
+            <label for="message" class="modal__subtitle">Сообщение</label>
+            <textarea class="textarea modal__textarea" id="message" name="message" placeholder="Сообщение"></textarea>
+          </div>
+          <div class="modal__input-group">
+            <label for="email" class="modal__subtitle">Email</label>
+            <input class="input modal__input" id="email" type="email" name="email" placeholder="Email*"
+              data-validate-field="email">
+          </div>
+          <div class="modal__input-group modal__input-group--check">
+            <input class="modal__checkbox" type="checkbox" id="checkbox" data-validate-field="checkbox" checked>
+            <span class="modal__fake"></span>
+            <label class="modal__label " for="checkbox">Согласен с обработкой данных</label>
+          </div>
+          <button class="btn modal__btn button" name="button" value="booking-form">Отправить</button>
+          <input type="hidden" name="admin_email[]" value="wywkoff@gmail.com">
+          <input type="hidden" name="form_subject" value="Заявка с сайта Universal">
+        </form>
+        <button class="modal__close" aria-label="Close modal window">
+          <svg class="modal__close-btn">
+            <use xlink:href="img/sprite.svg#modal-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <button class="to-top" id="to-top">
+    <svg class="to-top__img">
+      <use xlink:href="img/sprite.svg#to-top"></use>
+    </svg>
+  </button>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

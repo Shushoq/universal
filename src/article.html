@@ -4,11 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Онлайн статьи на IT тематику">
   <title>Unversal - новостной портал web-разработки и дизайна</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link href="fonts/Lato-Heavy.woff2" rel="preload" as="font" crossorigin>
+  <link href="fonts/Lato-Regular.woff2" rel="preload" as="font" crossorigin>
+  <link href="fonts/Lato-HeavyItalic.woff2" rel="preload" as="font" crossorigin>
+  <link href="fonts/RobotoSlab-Bold.woff2" rel="preload" as="font" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -37,7 +42,7 @@
           </svg>
         </button>
       </form>
-      <div class="burger">
+      <div class="burger burger--dark">
         <span></span>
         <span></span>
         <span></span>
@@ -118,7 +123,8 @@
           <li class="footer__social-item"><a href="#" class="footer__social-link">Контакты</a></li>
           <li class="footer__social-item"><a href="#" class="footer__social-link">Работа у нас</a></li>
           <li class="footer__social-item"><a href="#" class="footer__social-link">Реклама</a></li>
-          <li class="footer__social-item"><button class="footer__social-link modal-btn" data-path="first" data-speed="200">Партнёрство</button></li>
+          <li class="footer__social-item"><button class="footer__social-link modal-btn" data-path="first"
+              data-speed="200">Партнёрство</button></li>
         </ul>
         <div class="social footer__media">
           <a href="https://www.facebook.com/" class="social__link social__link--facebook social__link--footer"
@@ -127,7 +133,8 @@
               <use xlink:href="img/sprite.svg#facebook"></use>
             </svg>
           </a>
-          <a href="https://twitter.com/" class="social__link social__link--twitter social__link--footer" target="_blank">
+          <a href="https://twitter.com/" class="social__link social__link--twitter social__link--footer"
+            target="_blank">
             <svg class="social__img">
               <use xlink:href="img/sprite.svg#twitter"></use>
             </svg>
@@ -159,24 +166,31 @@
   <div class="modal">
     <div class="modal__container" data-target="first">
       <div class="modal__content">
-        <h3 class="modal__title">Форма обратной связи</h3>
+        <h3 class="modal__title">Обратная связь</h3>
         <form class="form modal__form modal__form--feedback">
           <div class="modal__input-group">
-            <input class="input modal__input name" type="text" name="name" placeholder="Имя*"
-              data-validate-field="name">
+            <label for="select" class="modal__subtitle">Тема</label>
+            <select class="modal__input modal__select" name="select" id="select">
+              <option class="modal__option" selected disabled hidden>Выберите тему</option>
+              <option class="modal__option" value="CSS">CSS</option>
+              <option class="modal__option" value="JS">JavaScript</option>
+            </select>
           </div>
           <div class="modal__input-group">
-            <input class="input modal__input" type="tel" name="phone" placeholder="Телефон*" data-validate-field="tel">
+            <label for="message" class="modal__subtitle">Сообщение</label>
+            <textarea class="textarea modal__textarea" id="message" name="message" placeholder="Сообщение"></textarea>
           </div>
           <div class="modal__input-group">
-            <input class="input modal__input" type="email" name="email" placeholder="Email*"
+            <label for="email" class="modal__subtitle">Email</label>
+            <input class="input modal__input" id="email" type="email" name="email" placeholder="Email*"
               data-validate-field="email">
           </div>
-          <textarea class="textarea modal__textarea" name="message" placeholder="Сообщение"></textarea>
-          <div class="modal__form-bottom">
-            <button class="btn btn-trans modal__btn" name="button" value="booking-form">Отправить</button>
-            <span class="modal__form-text">* обазятельные поля</span>
+          <div class="modal__input-group modal__input-group--check">
+            <input class="modal__checkbox" type="checkbox" id="checkbox" data-validate-field="checkbox" checked>
+            <span class="modal__fake"></span>
+            <label class="modal__label " for="checkbox">Согласен с обработкой данных</label>
           </div>
+          <button class="btn modal__btn button" name="button" value="booking-form">Отправить</button>
           <input type="hidden" name="admin_email[]" value="wywkoff@gmail.com">
           <input type="hidden" name="form_subject" value="Заявка с сайта Universal">
         </form>

@@ -5,6 +5,7 @@
   background-color: #fff
   &__wrapper
   &__material
+    display: block
     float: right
     margin-top: -76px
     width: 263px
@@ -114,12 +115,12 @@
       object-fit: cover
 
 .slider
-  &__prev
+  &-prev
     width: 60px
     height: 60px
     fill: #fff
     opacity: 0.4
-  &__next
+  &-next
     width: 60px
     height: 60px
     fill: #fff
@@ -251,10 +252,18 @@
         transition: background-color 0.3s ease, color 0.3s ease
         color: $light-color
   .slider
-    &__next
+    &-next
+      transition: fill 0.3s ease, opacity 0.3s ease
       &:hover
+        transition: fill 0.3s ease, opacity 0.3s ease
         fill: $accent-color
-    &__prev
+        opacity: 0.6
+    &-prev
+      transition: fill 0.3s ease, opacity 0.3s ease
+      &:hover
+        transition: fill 0.3s ease, opacity 0.3s ease
+        fill: $accent-color
+        opacity: 0.6
   .repost
     &__link
       transition: background-color 0.3s ease, box-shadow 0.3s ease

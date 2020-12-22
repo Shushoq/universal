@@ -7,6 +7,10 @@
   background-position: center
   background-size: cover
   z-index: 10
+  &--first
+    background-image: url('../img/news-bg-4.jpg')
+  &--second
+    background-image: url('../img/news-bg-2.jpg')
   &::after
     content: ""
     position: absolute
@@ -116,3 +120,27 @@
       opacity: 0.85
       font-size: 12px
       mix-blend-mode: normal
+
+@media(hover: hover) and (pointer: fine)
+  .navigation
+    &__next
+      transition: fill 0.3s ease
+    &__home
+      transition: fill 0.3s ease
+    &__prev
+      transition: fill 0.3s ease
+    &__link
+      transition: color 0.3s ease
+      &:hover
+        color: #4592ff
+        transition: color 0.3s ease, fill 0.3s ease
+        .navigation
+          &__next
+            transition: fill 0.3s ease
+            fill: #4592ff
+          &__prev
+            transition: fill 0.3s ease
+            fill: #4592ff
+          &__home
+            transition: fill 0.3s ease
+            fill: #4592ff

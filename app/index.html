@@ -4,11 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Онлайн статьи на IT тематику">
   <title>Unversal - новостной портал web-разработки и дизайна</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link href="fonts/Lato-Heavy.woff2" rel="preload" as="font" crossorigin>
+  <link href="fonts/Lato-Regular.woff2" rel="preload" as="font" crossorigin>
+  <link href="fonts/Lato-HeavyItalic.woff2" rel="preload" as="font" crossorigin>
+  <link href="fonts/RobotoSlab-Bold.woff2" rel="preload" as="font" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -66,7 +71,7 @@
         </div>
       </div>
 
-      <div class="hero__content" id="tab_1">
+      <div class="hero__content hero__content--2" id="tab_1">
         <div class="user hero__user">
           <img class="user__img" src="img/avatar-2.jpg" alt="Аватар: Моника Гастамбиде">
           <div class="user__info">
@@ -81,7 +86,7 @@
         </div>
       </div>
 
-      <div class="hero__content" id="tab_2">
+      <div class="hero__content hero__content--3" id="tab_2">
         <div class="user hero__user">
           <img class="user__img" src="img/avatar-3.jpg" alt="Аватар: Силене Оливейра">
           <div class="user__info">
@@ -96,7 +101,7 @@
         </div>
       </div>
 
-      <div class="hero__content" id="tab_3">
+      <div class="hero__content hero__content--4" id="tab_3">
         <div class="user hero__user">
           <img class="user__img" src="img/avatar-4.jpg" alt="Аватар: Даниэль Рамос">
           <div class="user__info">
@@ -111,7 +116,7 @@
         </div>
       </div>
 
-      <div class="hero__content" id="tab_4">
+      <div class="hero__content hero__content--5" id="tab_4">
         <div class="user hero__user">
           <img class="user__img" src="img/avatar-5.jpg" alt="Аватар: Анибаль Кортес">
           <div class="user__info">
@@ -126,7 +131,7 @@
         </div>
       </div>
 
-      <div class="hero__content" id="tab_5">
+      <div class="hero__content hero__content--6" id="tab_5">
         <div class="user hero__user">
           <img class="user__img" src="img/avatar-6.jpg" alt="Аватар: Агата Хименес">
           <div class="user__info">
@@ -186,25 +191,25 @@
       <li class="article__item">
         <a href="#" class="article__link">
           <h3 class="article__title">25 способов настроить&nbsp;слайдер </h3>
-          <img src="img/article-1.png" alt="Мужчина с ноутбуком" class="article__img">
+          <img src="img/article-1.jpg" loading="lazy" alt="Мужчина с ноутбуком" class="article__img">
         </a>
       </li>
       <li class="article__item">
         <a href="#" class="article__link">
           <h3 class="article__title">Главные фишки фрилансера</h3>
-          <img src="img/article-2.png" alt="Мужчина и женщина смотрят на доску с документами" class="article__img">
+          <img src="img/article-2.jpg" loading="lazy" alt="Мужчина и женщина смотрят на доску с документами" class="article__img">
         </a>
       </li>
       <li class="article__item">
         <a href="#" class="article__link">
           <h3 class="article__title">Техника управления  временем “Помодоро”</h3>
-          <img src="img/article-3.png" alt="Телефон, клавиатура и растение" class="article__img">
+          <img src="img/article-3.jpg" loading="lazy" alt="Телефон, клавиатура и растение" class="article__img">
         </a>
       </li>
       <li class="article__item">
         <a href="#" class="article__link">
           <h3 class="article__title">Что нужно знать о Git и GitHub </h3>
-          <img src="img/article-4.png" alt="Таймер на 60 секунд" class="article__img">
+          <img src="img/article-4.jpg" loading="lazy" alt="Таймер на 60 секунд" class="article__img">
         </a>
       </li>
     </ul>
@@ -250,13 +255,13 @@
               <div class="user__descr">
                 <time class="user__date" datetime="2019-09-25">25 сентября</time>
                 <div class="comment comment--mr">
-                  <svg class="comment__img">
+                  <svg class="comment__img comment__img--white">
                     <use xlink:href="img/sprite.svg#comment-light"></use>
                   </svg>
                   <span class="comment__counter comment__counter--light">16</span>
                 </div>
                 <div class="like">
-                  <svg class="like__img">
+                  <svg class="like__img like__img--white">
                     <use xlink:href="img/sprite.svg#like"></use>
                   </svg>
                   <span class="like__counter">832</span>
@@ -369,7 +374,7 @@
     <ul class="feed__list">
 
       <li class="feed__item">
-        <a href="#" class="feed__link"><img src="img/feed-1.jpg" alt="#" class="feed__img"></a>
+        <a href="#" class="feed__link"><img src="img/feed-1.jpg" loading="lazy" alt="#" class="feed__img"></a>
         <div class="feed__content">
           <h4 class="feed__subtitle feed__subtitle--1">Новости</h4>
           <h3 class="feed__title"><a href="#" class="feed__title-link">Новый налоговый режим для фрилансеров — налог на
@@ -398,7 +403,7 @@
       </li>
 
       <li class="feed__item">
-        <a href="#" class="feed__link"><img src="img/feed-2.jpg" alt="Мужчина за ноутбуком, сидящий за столом"
+        <a href="#" class="feed__link"><img src="img/feed-2.jpg" loading="lazy" alt="Мужчина за ноутбуком, сидящий за столом"
             class="feed__img"></a>
         <div class="feed__content">
           <h4 class="feed__subtitle feed__subtitle--2">Мнения</h4>
@@ -428,7 +433,7 @@
       </li>
 
       <li class="feed__item">
-        <a href="#" class="feed__link"><img src="img/feed-3.jpg" alt="Программист за столом" class="feed__img"></a>
+        <a href="#" class="feed__link"><img src="img/feed-3.jpg" loading="lazy" alt="Программист за столом" class="feed__img"></a>
         <div class="feed__content">
           <h4 class="feed__subtitle feed__subtitle--3">Горячее</h4>
           <h3 class="feed__title"><a href="#" class="feed__title-link">Из-за ограничений стали недоступны серверы
@@ -457,7 +462,7 @@
       </li>
 
       <li class="feed__item">
-        <a href="#" class="feed__link"><img src="img/feed-4.jpg" alt="Ноутбук, книжки и очки" class="feed__img"></a>
+        <a href="#" class="feed__link"><img src="img/feed-4.jpg" loading="lazy" alt="Ноутбук, книжки и очки" class="feed__img"></a>
         <div class="feed__content">
           <h4 class="feed__subtitle feed__subtitle--4">Мнения</h4>
           <h3 class="feed__title"><a href="#" class="feed__title-link">В вашем портфолио могут быть фейковые проекты,
@@ -487,7 +492,7 @@
 
 
       <li class="feed__item">
-        <a href="#" class="feed__link"><img src="img/feed-5.jpg" alt="Водопад" class="feed__img"></a>
+        <a href="#" class="feed__link"><img src="img/feed-5.jpg" loading="lazy" alt="Водопад" class="feed__img"></a>
         <div class="feed__content">
           <h4 class="feed__subtitle feed__subtitle--5">Горячее</h4>
           <h3 class="feed__title"><a href="#" class="feed__title-link">Список стран, куда можно улететь</a></h3>
@@ -515,7 +520,7 @@
       </li>
 
       <li class="feed__item">
-        <a href="#" class="feed__link"><img src="img/feed-6.jpg" alt="Экран ноутбука" class="feed__img"></a>
+        <a href="#" class="feed__link"><img src="img/feed-6.jpg" loading="lazy" alt="Экран ноутбука" class="feed__img"></a>
         <div class="feed__content">
           <h4 class="feed__subtitle feed__subtitle--6">Подборки</h4>
           <h3 class="feed__title"><a href="#" class="feed__title-link">Список Youtube каналов для тех, кто только
@@ -550,7 +555,7 @@
       <ul class="sidebar__list">
         <li class="sidebar__item">
           <a href="#" class="sidebar__link">
-            <img src="img/sidebar-1.jpg" alt="Девушка с ноутбуком" class="sidebar__img">
+            <img src="img/sidebar-1.jpg" loading="lazy" alt="Девушка с ноутбуком" class="sidebar__img">
             <div class="sidebar__content">
               <h3 class="sidebar__title">Работа на удаленке, как это теперь</h3>
               <span class="sidebar__time">15 минут назад</span>
@@ -560,7 +565,7 @@
         </li>
         <li class="sidebar__item">
           <a href="#" class="sidebar__link">
-            <img src="img/sidebar-2.jpg" alt="Ноутбук, ручка и кружка" class="sidebar__img">
+            <img src="img/sidebar-2.jpg" loading="lazy" alt="Ноутбук, ручка и кружка" class="sidebar__img">
             <div class="sidebar__content">
               <h3 class="sidebar__title">Для чего нужен Node.js и с чем...</h3>
               <span class="sidebar__time">32 минуты назад</span>
@@ -570,7 +575,7 @@
         </li>
         <li class="sidebar__item">
           <a href="#" class="sidebar__link">
-            <img src="img/sidebar-3.jpg" alt="Компания Google" class="sidebar__img">
+            <img src="img/sidebar-3.jpg" loading="lazy" alt="Компания Google" class="sidebar__img">
             <div class="sidebar__content">
               <h3 class="sidebar__title">Работа в Google: собеседования и...</h3>
               <span class="sidebar__time">38 минут назад</span>
@@ -580,7 +585,7 @@
         </li>
         <li class="sidebar__item">
           <a href="#" class="sidebar__link">
-            <img src="img/sidebar-4.jpg" alt="New York" class="sidebar__img">
+            <img src="img/sidebar-4.jpg" loading="lazy" alt="New York" class="sidebar__img">
             <div class="sidebar__content">
               <h3 class="sidebar__title">Переезд в Нью Йорк для работы по...</h3>
               <span class="sidebar__time">53 минуты назад</span>
@@ -590,7 +595,7 @@
         </li>
         <li class="sidebar__item">
           <a href="#" class="sidebar__link">
-            <img src="img/sidebar-5.jpg" alt="Ноутбук с кружкой" class="sidebar__img">
+            <img src="img/sidebar-5.jpg" loading="lazy" alt="Ноутбук с кружкой" class="sidebar__img">
             <div class="sidebar__content">
               <h3 class="sidebar__title">Почему родители против того, чтобы...</h3>
               <span class="sidebar__time">1 час назад</span>
@@ -600,7 +605,7 @@
         </li>
         <li class="sidebar__item">
           <a href="#" class="sidebar__link">
-            <img src="img/sidebar-6.jpg" alt="4 ноутбука и рабочий стол" class="sidebar__img">
+            <img src="img/sidebar-6.jpg" loading="lazy" alt="4 ноутбука и рабочий стол" class="sidebar__img">
             <div class="sidebar__content">
               <h3 class="sidebar__title">Прокрастинация: побороть отклады...</h3>
               <span class="sidebar__time">2 часа назад</span>
@@ -610,7 +615,7 @@
         </li>
         <li class="sidebar__item">
           <a href="#" class="sidebar__link">
-            <img src="img/sidebar-7.jpg" alt="Ноутбук и растение" class="sidebar__img">
+            <img src="img/sidebar-7.jpg" loading="lazy" alt="Ноутбук и растение" class="sidebar__img">
             <div class="sidebar__content">
               <h3 class="sidebar__title">Правки от заказчика могут быть...</h3>
               <span class="sidebar__time">2 часа назад</span>
@@ -630,7 +635,7 @@
       <div class="news__slider">
         <div class="news__pagination swiper-pagination"></div>
         <div class="swiper-wrapper">
-          <div class="news__item news__item--big swiper-slide">
+          <div class="news__item news__item--1 news__item--big swiper-slide">
             <span class="tagname news__tagname">Горячее</span>
             <div class="user news__user">
               <img class="user__img user__img--news" src="img/news-1.png" alt="Аватар: Оксана Пушкина">
@@ -650,7 +655,7 @@
               </svg>Смотреть фото <span>26</span></button>
           </div>
 
-          <div class="news__item news__item--big swiper-slide">
+          <div class="news__item news__item--2 news__item--big swiper-slide">
             <span class="tagname news__tagname">Горячее</span>
             <div class="user news__user">
               <img class="user__img user__img--news" src="img/avatar-2.jpg" alt="Аватар: Моника Гастамбиде">
@@ -670,7 +675,7 @@
               </svg>Смотреть фото <span>11</span></button>
           </div>
 
-          <div class="news__item news__item--big swiper-slide">
+          <div class="news__item news__item--3 news__item--big swiper-slide">
             <span class="tagname news__tagname">Горячее</span>
             <div class="user news__user">
               <img class="user__img user__img--news" src="img/avatar-3.jpg" alt="Аватар: Силене Оливейра">
@@ -690,7 +695,7 @@
               </svg>Смотреть фото <span>15</span></button>
           </div>
 
-          <div class="news__item news__item--big swiper-slide">
+          <div class="news__item news__item--4 news__item--big swiper-slide">
             <span class="tagname news__tagname">Горячее</span>
             <div class="user news__user">
               <img class="user__img user__img--news" src="img/avatar-4.jpg" alt="Аватар: Даниэль Рамос">
@@ -710,7 +715,7 @@
               </svg>Смотреть фото <span>22</span></button>
           </div>
 
-          <div class="news__item news__item--big swiper-slide">
+          <div class="news__item news__item--5 news__item--big swiper-slide">
             <span class="tagname news__tagname">Горячее</span>
             <div class="user news__user">
               <img class="user__img user__img--news" src="img/avatar-5.jpg" alt="Аватар: Анибаль Кортес">
@@ -886,24 +891,31 @@
   <div class="modal">
     <div class="modal__container" data-target="first">
       <div class="modal__content">
-        <h3 class="modal__title">Форма обратной связи</h3>
+        <h3 class="modal__title">Обратная связь</h3>
         <form class="form modal__form modal__form--feedback">
           <div class="modal__input-group">
-            <input class="input modal__input name" type="text" name="name" placeholder="Имя*"
-              data-validate-field="name">
+            <label for="select" class="modal__subtitle">Тема</label>
+            <select class="modal__input modal__select" name="select" id="select">
+              <option class="modal__option" selected disabled hidden>Выберите тему</option>
+              <option class="modal__option" value="CSS">CSS</option>
+              <option class="modal__option" value="JS">JavaScript</option>
+            </select>
           </div>
           <div class="modal__input-group">
-            <input class="input modal__input" type="tel" name="phone" placeholder="Телефон*" data-validate-field="tel">
+            <label for="message" class="modal__subtitle">Сообщение</label>
+            <textarea class="textarea modal__textarea" id="message" name="message" placeholder="Сообщение"></textarea>
           </div>
           <div class="modal__input-group">
-            <input class="input modal__input" type="email" name="email" placeholder="Email*"
+            <label for="email" class="modal__subtitle">Email</label>
+            <input class="input modal__input" id="email" type="email" name="email" placeholder="Email*"
               data-validate-field="email">
           </div>
-          <textarea class="textarea modal__textarea" name="message" placeholder="Сообщение"></textarea>
-          <div class="modal__form-bottom">
-            <button class="btn btn-trans modal__btn" name="button" value="booking-form">Отправить</button>
-            <span class="modal__form-text">* обазятельные поля</span>
+          <div class="modal__input-group modal__input-group--check">
+            <input class="modal__checkbox" type="checkbox" id="checkbox" data-validate-field="checkbox" checked>
+            <span class="modal__fake"></span>
+            <label class="modal__label " for="checkbox">Согласен с обработкой данных</label>
           </div>
+          <button class="btn modal__btn button" name="button" value="booking-form">Отправить</button>
           <input type="hidden" name="admin_email[]" value="wywkoff@gmail.com">
           <input type="hidden" name="form_subject" value="Заявка с сайта Universal">
         </form>
@@ -915,6 +927,7 @@
       </div>
     </div>
   </div>
+
   <button class="to-top" id="to-top">
     <svg class="to-top__img">
       <use xlink:href="img/sprite.svg#to-top"></use>

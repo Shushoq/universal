@@ -34,22 +34,31 @@
       <div class="post__slider-container">
         <div class="swiper-wrapper">
           <div class="post__slide swiper-slide">
-            <img class="post__slide-img" src="img/post-slider-1.jpg" alt="Горы и лес">
+            <picture>
+              <source media="(max-width: 576px)" srcset="img/post-slider-1-small.jpg">
+              <img class="post__slide-img" src="img/post-slider-1.jpg" alt="Горы и лес" loading="lazy">
+            </picture>
           </div>
           <div class="post__slide swiper-slide">
-            <img class="post__slide-img" src="img/post-slider-2.jpg" alt="Горы и лес">
+            <picture>
+              <source media="(max-width: 576px)" srcset="img/post-slider-2-small.jpg">
+              <img class="post__slide-img" src="img/post-slider-2.jpg" alt="Горы и лес" loading="lazy">
+            </picture>
           </div>
           <div class="post__slide swiper-slide">
-            <img class="post__slide-img" src="img/post-slider-3.jpg" alt="Горы и лес">
+            <picture>
+              <source media="(max-width: 576px)" srcset="img/post-slider-3-small.jpg">
+              <img class="post__slide-img" src="img/post-slider-3.jpg" alt="Горы и лес" loading="lazy">
+            </picture>
           </div>
         </div>
         <button class="post__slider-button post__slider-button--prev">
-          <svg class="slider__prev">
+          <svg class="slider-prev">
             <use xlink:href="img/sprite.svg#slider-prev"></use>
           </svg>
         </button>
         <button class="post__slider-button post__slider-button--next">
-          <svg class="slider__next">
+          <svg class="slider-next">
             <use xlink:href="img/sprite.svg#slider-next"></use>
           </svg>
         </button>
@@ -73,7 +82,7 @@
         роль в формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянное
         информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации
         дальнейших направлений развития.</p>
-      <div class="post__material material">
+      <a href="#" class="post__material material">
         <h3 class="material__title">Материал по теме</h3>
         <img src="img/material-1.jpg" alt="Жираф" class="material__img">
         <h4 class="material__subtitle material__subtitle--max">20+ инструментов для js-разработчика</h4>
@@ -93,7 +102,7 @@
             <span class="comment__counter">102</span>
           </div>
         </div>
-      </div>
+      </a>
       <p class="post__text">Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную
         роль в формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянное
         информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации

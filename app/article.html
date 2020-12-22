@@ -4,11 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Онлайн статьи на IT тематику">
   <title>Unversal - новостной портал web-разработки и дизайна</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link href="fonts/Lato-Heavy.woff2" rel="preload" as="font" crossorigin>
+  <link href="fonts/Lato-Regular.woff2" rel="preload" as="font" crossorigin>
+  <link href="fonts/Lato-HeavyItalic.woff2" rel="preload" as="font" crossorigin>
+  <link href="fonts/RobotoSlab-Bold.woff2" rel="preload" as="font" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -37,7 +42,7 @@
           </svg>
         </button>
       </form>
-      <div class="burger">
+      <div class="burger burger--dark">
         <span></span>
         <span></span>
         <span></span>
@@ -56,13 +61,13 @@
           </svg>
           На главную
         </a>
-        <a href="index.html" class="navigation__link">
+        <a href="first.html" class="navigation__link">
           <svg class="navigation__prev">
             <use xlink:href="img/sprite.svg#prev"></use>
           </svg>
           Назад
         </a>
-        <a href="index.html" class="navigation__link">
+        <a href="second.html" class="navigation__link">
           Вперёд
           <svg class="navigation__next">
             <use xlink:href="img/sprite.svg#next"></use>
@@ -135,22 +140,31 @@
       <div class="post__slider-container">
         <div class="swiper-wrapper">
           <div class="post__slide swiper-slide">
-            <img class="post__slide-img" src="img/post-slider-1.jpg" alt="Горы и лес">
+            <picture>
+              <source media="(max-width: 576px)" srcset="img/post-slider-1-small.jpg">
+              <img class="post__slide-img" src="img/post-slider-1.jpg" alt="Горы и лес" loading="lazy">
+            </picture>
           </div>
           <div class="post__slide swiper-slide">
-            <img class="post__slide-img" src="img/post-slider-2.jpg" alt="Горы и лес">
+            <picture>
+              <source media="(max-width: 576px)" srcset="img/post-slider-2-small.jpg">
+              <img class="post__slide-img" src="img/post-slider-2.jpg" alt="Горы и лес" loading="lazy">
+            </picture>
           </div>
           <div class="post__slide swiper-slide">
-            <img class="post__slide-img" src="img/post-slider-3.jpg" alt="Горы и лес">
+            <picture>
+              <source media="(max-width: 576px)" srcset="img/post-slider-3-small.jpg">
+              <img class="post__slide-img" src="img/post-slider-3.jpg" alt="Горы и лес" loading="lazy">
+            </picture>
           </div>
         </div>
         <button class="post__slider-button post__slider-button--prev">
-          <svg class="slider__prev">
+          <svg class="slider-prev">
             <use xlink:href="img/sprite.svg#slider-prev"></use>
           </svg>
         </button>
         <button class="post__slider-button post__slider-button--next">
-          <svg class="slider__next">
+          <svg class="slider-next">
             <use xlink:href="img/sprite.svg#slider-next"></use>
           </svg>
         </button>
@@ -174,7 +188,7 @@
         роль в формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянное
         информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации
         дальнейших направлений развития.</p>
-      <div class="post__material material">
+      <a href="#" class="post__material material">
         <h3 class="material__title">Материал по теме</h3>
         <img src="img/material-1.jpg" alt="Жираф" class="material__img">
         <h4 class="material__subtitle material__subtitle--max">20+ инструментов для js-разработчика</h4>
@@ -194,7 +208,7 @@
             <span class="comment__counter">102</span>
           </div>
         </div>
-      </div>
+      </a>
       <p class="post__text">Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную
         роль в формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянное
         информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации
@@ -251,7 +265,7 @@
 
     <section class="material material__main">
   <div class="container material__container">
-    <div class="material__card">
+    <a href="#" class="material__card">
       <img src="img/material-2.jpg" alt="Блюдо" class="material__img">
       <h4 class="material__subtitle">Техника работы по помидоркам — это как? </h4>
       <div class="material__info">
@@ -268,8 +282,8 @@
           <span class="comment__counter">82</span>
         </div>
       </div>
-    </div>
-    <div class="material__card">
+    </a>
+    <a href="#" class="material__card">
       <img src="img/material-3.jpg" alt="Волны" class="material__img">
       <h4 class="material__subtitle">Вопросы на собеседовании для джуна</h4>
       <div class="material__info">
@@ -286,8 +300,8 @@
           <span class="comment__counter">982</span>
         </div>
       </div>
-    </div>
-    <div class="material__card">
+    </a>
+    <a href="#" class="material__card">
       <img src="img/material-4.jpg" alt="Цветы и пчела" class="material__img">
       <h4 class="material__subtitle">Список стран, куда можно улететь</h4>
       <div class="material__info">
@@ -304,8 +318,8 @@
           <span class="comment__counter">30</span>
         </div>
       </div>
-    </div>
-    <div class="material__card">
+    </a>
+    <a href="#" class="material__card">
       <img src="img/material-5.jpg" alt="Девушка в машине" class="material__img">
       <h4 class="material__subtitle">В вашем портфолио могут быть фейковые работы</h4>
       <div class="material__info">
@@ -322,7 +336,7 @@
           <span class="comment__counter">495</span>
         </div>
       </div>
-    </div>
+    </a>
   </div>
 </section>
 
@@ -331,12 +345,12 @@
     <div class="comments__top">
       <h2 class="comments__title">Комментарии</h2>
       <span class="comments__counter">19</span>
-      <button class="comments__add">
+      <a href="#add" class="comments__add">
         <svg class="comments__img">
           <use xlink:href="img/sprite.svg#pencil"></use>
         </svg>
         Добавить комментарии
-      </button>
+      </a>
     </div>
     <div class="comments__wrapper">
       <div class="comments__item">
@@ -348,16 +362,16 @@
           </div>
           <p class="comments__text">Хочу заметить, что автор этой статьи не написал, что не все могут получить статус
             самозанятого. Этот режим еще не ввели во всех регионах. Но если в вашем регионе есть, то поздравляю.</p>
-          <div class="comments__bottom">
+          <div class="comments__bottom comment">
             <svg class="comment__img comment__img--grey comments__comment">
               <use xlink:href="img/sprite.svg#comment"></use>
             </svg>
             <span class="comments__bottom-text">Ответить</span>
-            <svg class="comments__thumb">
+            <svg class="comments__thumb comments__thumb--up">
               <use xlink:href="img/sprite.svg#thumbup"></use>
             </svg>
-            <span class="comments__bottom-counter">+10</span>
-            <svg class="comments__thumb">
+            <span class="comments__bottom-counter comments__bottom-counter--up">+10</span>
+            <svg class="comments__thumb comments__thumb--down">
               <use xlink:href="img/sprite.svg#thumbdown"></use>
             </svg>
           </div>
@@ -372,16 +386,16 @@
           </div>
           <p class="comments__text">Да, спасибо за замечание. Добавлю список регионов, где этот режим уже действует и
             буду периодически обновлять его. Потому что обещали ввести этот режим везде. </p>
-          <div class="comments__bottom">
+          <div class="comments__bottom comment">
             <svg class="comment__img comment__img--grey comments__comment">
               <use xlink:href="img/sprite.svg#comment"></use>
             </svg>
             <span class="comments__bottom-text">Ответить</span>
-            <svg class="comments__thumb">
+            <svg class="comments__thumb comments__thumb--up">
               <use xlink:href="img/sprite.svg#thumbup"></use>
             </svg>
             <span class="comments__bottom-counter">0</span>
-            <svg class="comments__thumb">
+            <svg class="comments__thumb comments__thumb--down">
               <use xlink:href="img/sprite.svg#thumbdown"></use>
             </svg>
           </div>
@@ -397,16 +411,16 @@
           <p class="comments__text comments__text--mb">Если честно, кажется, что этот налоговый режим ввели, чтобы
             собрать больше денег с народа. Я, конечно, понимаю, что бюджеты надо пополнять, но не лучше ли обложить
             налогом богатых?</p>
-          <div class="comments__bottom">
+          <div class="comments__bottom comment">
             <svg class="comment__img comment__img--grey comments__comment">
               <use xlink:href="img/sprite.svg#comment"></use>
             </svg>
             <span class="comments__bottom-text">Ответить</span>
-            <svg class="comments__thumb">
+            <svg class="comments__thumb comments__thumb--up">
               <use xlink:href="img/sprite.svg#thumbup"></use>
             </svg>
-            <span class="comments__bottom-counter">-3</span>
-            <svg class="comments__thumb">
+            <span class="comments__bottom-counter comments__bottom-counter--down">-3</span>
+            <svg class="comments__thumb comments__thumb--down">
               <use xlink:href="img/sprite.svg#thumbdown"></use>
             </svg>
           </div>
@@ -421,16 +435,65 @@
           </div>
           <p class="comments__text">Такой режим уже давно работает в продвинутых странах, почему его ввели только
             сейчас, непонятно. Хотелось бы, чтобы это все заработало в моем регионе, буду в числе первых!</p>
-          <div class="comments__bottom">
+          <div class="comments__bottom comment">
             <svg class="comment__img comment__img--grey comments__comment">
               <use xlink:href="img/sprite.svg#comment"></use>
             </svg>
             <span class="comments__bottom-text">Ответить</span>
-            <svg class="comments__thumb">
+            <svg class="comments__thumb comments__thumb--up">
               <use xlink:href="img/sprite.svg#thumbup"></use>
             </svg>
             <span class="comments__bottom-counter">0</span>
-            <svg class="comments__thumb">
+            <svg class="comments__thumb comments__thumb--down">
+              <use xlink:href="img/sprite.svg#thumbdown"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="comments__item comments__item--hidden">
+        <img src="img/comment-2.jpg" alt="Аватар: Мира Стахова" class="comments__avatar">
+        <div class="comments__info">
+          <div class="comments__author">
+            <span class="comments__name">Мира Стахова</span>
+            <time class="comments__date" datetime="2019-07-17T10:30">17 июля, 18:41</time>
+          </div>
+          <p class="comments__text">Да, спасибо за замечание. Добавлю список регионов, где этот режим уже действует и
+            буду периодически обновлять его. Потому что обещали ввести этот режим везде. </p>
+          <div class="comments__bottom comment">
+            <svg class="comment__img comment__img--grey comments__comment">
+              <use xlink:href="img/sprite.svg#comment"></use>
+            </svg>
+            <span class="comments__bottom-text">Ответить</span>
+            <svg class="comments__thumb comments__thumb--up">
+              <use xlink:href="img/sprite.svg#thumbup"></use>
+            </svg>
+            <span class="comments__bottom-counter">0</span>
+            <svg class="comments__thumb comments__thumb--down">
+              <use xlink:href="img/sprite.svg#thumbdown"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="comments__item comments__item--hidden">
+        <img src="img/comment-3.jpg" alt="Аватар: Анжела Иванова" class="comments__avatar">
+        <div class="comments__info">
+          <div class="comments__author">
+            <span class="comments__name">Анжела Иванова</span>
+            <time class="comments__date" datetime="2019-07-17T10:30">17 июля, 18:53</time>
+          </div>
+          <p class="comments__text comments__text--mb">Если честно, кажется, что этот налоговый режим ввели, чтобы
+            собрать больше денег с народа. Я, конечно, понимаю, что бюджеты надо пополнять, но не лучше ли обложить
+            налогом богатых?</p>
+          <div class="comments__bottom comment">
+            <svg class="comment__img comment__img--grey comments__comment">
+              <use xlink:href="img/sprite.svg#comment"></use>
+            </svg>
+            <span class="comments__bottom-text">Ответить</span>
+            <svg class="comments__thumb comments__thumb--up">
+              <use xlink:href="img/sprite.svg#thumbup"></use>
+            </svg>
+            <span class="comments__bottom-counter comments__bottom-counter--down">-3</span>
+            <svg class="comments__thumb comments__thumb--down">
               <use xlink:href="img/sprite.svg#thumbdown"></use>
             </svg>
           </div>
@@ -445,64 +508,16 @@
           </div>
           <p class="comments__text">Такой режим уже давно работает в продвинутых странах, почему его ввели только
             сейчас, непонятно. Хотелось бы, чтобы это все заработало в моем регионе, буду в числе первых!</p>
-          <div class="comments__bottom">
+          <div class="comments__bottom comment">
             <svg class="comment__img comment__img--grey comments__comment">
               <use xlink:href="img/sprite.svg#comment"></use>
             </svg>
             <span class="comments__bottom-text">Ответить</span>
-            <svg class="comments__thumb">
+            <svg class="comments__thumb comments__thumb--up">
               <use xlink:href="img/sprite.svg#thumbup"></use>
             </svg>
             <span class="comments__bottom-counter">0</span>
-            <svg class="comments__thumb">
-              <use xlink:href="img/sprite.svg#thumbdown"></use>
-            </svg>
-          </div>
-        </div>
-      </div>
-      <div class="comments__item comments__item--hidden">
-        <img src="img/comment-4.jpg" alt="Аватар: Крис Яков" class="comments__avatar">
-        <div class="comments__info">
-          <div class="comments__author">
-            <span class="comments__name">Крис Яков</span>
-            <time class="comments__date" datetime="2019-07-17T10:30">17 июля, 19:12</time>
-          </div>
-          <p class="comments__text">Такой режим уже давно работает в продвинутых странах, почему его ввели только
-            сейчас, непонятно. Хотелось бы, чтобы это все заработало в моем регионе, буду в числе первых!</p>
-          <div class="comments__bottom">
-            <svg class="comment__img comment__img--grey comments__comment">
-              <use xlink:href="img/sprite.svg#comment"></use>
-            </svg>
-            <span class="comments__bottom-text">Ответить</span>
-            <svg class="comments__thumb">
-              <use xlink:href="img/sprite.svg#thumbup"></use>
-            </svg>
-            <span class="comments__bottom-counter">0</span>
-            <svg class="comments__thumb">
-              <use xlink:href="img/sprite.svg#thumbdown"></use>
-            </svg>
-          </div>
-        </div>
-      </div>
-      <div class="comments__item comments__item--hidden">
-        <img src="img/comment-4.jpg" alt="Аватар: Крис Яков" class="comments__avatar">
-        <div class="comments__info">
-          <div class="comments__author">
-            <span class="comments__name">Крис Яков</span>
-            <time class="comments__date" datetime="2019-07-17T10:30">17 июля, 19:12</time>
-          </div>
-          <p class="comments__text">Такой режим уже давно работает в продвинутых странах, почему его ввели только
-            сейчас, непонятно. Хотелось бы, чтобы это все заработало в моем регионе, буду в числе первых!</p>
-          <div class="comments__bottom">
-            <svg class="comment__img comment__img--grey comments__comment">
-              <use xlink:href="img/sprite.svg#comment"></use>
-            </svg>
-            <span class="comments__bottom-text">Ответить</span>
-            <svg class="comments__thumb">
-              <use xlink:href="img/sprite.svg#thumbup"></use>
-            </svg>
-            <span class="comments__bottom-counter">0</span>
-            <svg class="comments__thumb">
+            <svg class="comments__thumb comments__thumb--down">
               <use xlink:href="img/sprite.svg#thumbdown"></use>
             </svg>
           </div>
@@ -514,7 +529,7 @@
         </svg>
         загрузить еще
       </button>
-      <div class="comments__new">
+      <div id="add" class="comments__new">
         <h3 class="comments__new-title">Что вы думаете на этот счет?</h3>
         <div class="comments__new-wrapper">
           <img class="comments__new-img" src="img/comment-new.jpg" alt="Аватар">
@@ -614,7 +629,8 @@
           <li class="footer__social-item"><a href="#" class="footer__social-link">Контакты</a></li>
           <li class="footer__social-item"><a href="#" class="footer__social-link">Работа у нас</a></li>
           <li class="footer__social-item"><a href="#" class="footer__social-link">Реклама</a></li>
-          <li class="footer__social-item"><button class="footer__social-link modal-btn" data-path="first" data-speed="200">Партнёрство</button></li>
+          <li class="footer__social-item"><button class="footer__social-link modal-btn" data-path="first"
+              data-speed="200">Партнёрство</button></li>
         </ul>
         <div class="social footer__media">
           <a href="https://www.facebook.com/" class="social__link social__link--facebook social__link--footer"
@@ -623,7 +639,8 @@
               <use xlink:href="img/sprite.svg#facebook"></use>
             </svg>
           </a>
-          <a href="https://twitter.com/" class="social__link social__link--twitter social__link--footer" target="_blank">
+          <a href="https://twitter.com/" class="social__link social__link--twitter social__link--footer"
+            target="_blank">
             <svg class="social__img">
               <use xlink:href="img/sprite.svg#twitter"></use>
             </svg>
@@ -655,24 +672,31 @@
   <div class="modal">
     <div class="modal__container" data-target="first">
       <div class="modal__content">
-        <h3 class="modal__title">Форма обратной связи</h3>
+        <h3 class="modal__title">Обратная связь</h3>
         <form class="form modal__form modal__form--feedback">
           <div class="modal__input-group">
-            <input class="input modal__input name" type="text" name="name" placeholder="Имя*"
-              data-validate-field="name">
+            <label for="select" class="modal__subtitle">Тема</label>
+            <select class="modal__input modal__select" name="select" id="select">
+              <option class="modal__option" selected disabled hidden>Выберите тему</option>
+              <option class="modal__option" value="CSS">CSS</option>
+              <option class="modal__option" value="JS">JavaScript</option>
+            </select>
           </div>
           <div class="modal__input-group">
-            <input class="input modal__input" type="tel" name="phone" placeholder="Телефон*" data-validate-field="tel">
+            <label for="message" class="modal__subtitle">Сообщение</label>
+            <textarea class="textarea modal__textarea" id="message" name="message" placeholder="Сообщение"></textarea>
           </div>
           <div class="modal__input-group">
-            <input class="input modal__input" type="email" name="email" placeholder="Email*"
+            <label for="email" class="modal__subtitle">Email</label>
+            <input class="input modal__input" id="email" type="email" name="email" placeholder="Email*"
               data-validate-field="email">
           </div>
-          <textarea class="textarea modal__textarea" name="message" placeholder="Сообщение"></textarea>
-          <div class="modal__form-bottom">
-            <button class="btn btn-trans modal__btn" name="button" value="booking-form">Отправить</button>
-            <span class="modal__form-text">* обазятельные поля</span>
+          <div class="modal__input-group modal__input-group--check">
+            <input class="modal__checkbox" type="checkbox" id="checkbox" data-validate-field="checkbox" checked>
+            <span class="modal__fake"></span>
+            <label class="modal__label " for="checkbox">Согласен с обработкой данных</label>
           </div>
+          <button class="btn modal__btn button" name="button" value="booking-form">Отправить</button>
           <input type="hidden" name="admin_email[]" value="wywkoff@gmail.com">
           <input type="hidden" name="form_subject" value="Заявка с сайта Universal">
         </form>

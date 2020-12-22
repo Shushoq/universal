@@ -3,17 +3,18 @@
   &__list
     display: flex
   &__link
+    position: relative
     font-family: "Lato"
     font-weight: 900
     font-size: 14px
     padding: 25px 15px
   &--light
     color: $grey-color
+
 @media(hover: hover) and (pointer: fine)
   .nav
     &__link
-      transition: background-color 0.3s ease, border-bottom 0.3s ease
+      transition: background-color 0.3s ease
       &:hover
         background-color: lighten($dark-color, 10%)
-        border-bottom: 2px solid $light-color
-        transition: background-color 0.3s ease, border-bottom 0.3s ease
+        transition: background-color 0.3s ease
